@@ -7,22 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC24D82E28E18D670022212D /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24D82D28E18D670022212D /* OnboardingData.swift */; };
 		AC86F3C428DEDDB600F5EF90 /* GaNaDaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */; };
 		AC86F3C628DEDDB600F5EF90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86F3C528DEDDB600F5EF90 /* ContentView.swift */; };
 		AC86F3C828DEDDB600F5EF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */; };
 		AC86F3CB28DEDDB600F5EF90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */; };
-		AC86F3D628DEE2A200F5EF90 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86F3D528DEE2A200F5EF90 /* WelcomeView.swift */; };
-		AC86F3D828DEE36A00F5EF90 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86F3D728DEE36A00F5EF90 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC24D82D28E18D670022212D /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
 		AC86F3C028DEDDB600F5EF90 /* GaNaDa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaNaDa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaNaDaApp.swift; sourceTree = "<group>"; };
 		AC86F3C528DEDDB600F5EF90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AC86F3D528DEE2A200F5EF90 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		AC86F3D728DEE36A00F5EF90 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +55,7 @@
 			children = (
 				AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */,
 				AC86F3C528DEDDB600F5EF90 /* ContentView.swift */,
-				AC86F3D528DEE2A200F5EF90 /* WelcomeView.swift */,
-				AC86F3D728DEE36A00F5EF90 /* MainView.swift */,
+				AC24D82D28E18D670022212D /* OnboardingData.swift */,
 				AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */,
 				AC86F3C928DEDDB600F5EF90 /* Preview Content */,
 			);
@@ -115,6 +112,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = AC86F3B728DEDDB600F5EF90;
 			productRefGroup = AC86F3C128DEDDB600F5EF90 /* Products */;
@@ -143,9 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC24D82E28E18D670022212D /* OnboardingData.swift in Sources */,
 				AC86F3C628DEDDB600F5EF90 /* ContentView.swift in Sources */,
-				AC86F3D828DEE36A00F5EF90 /* MainView.swift in Sources */,
-				AC86F3D628DEE2A200F5EF90 /* WelcomeView.swift in Sources */,
 				AC86F3C428DEDDB600F5EF90 /* GaNaDaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +154,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -217,6 +215,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
