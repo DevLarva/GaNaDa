@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC24D82E28E18D670022212D /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24D82D28E18D670022212D /* OnboardingData.swift */; };
-		AC2A18BD28E353D600E26139 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2A18BC28E353D600E26139 /* MenuBarView.swift */; };
+		AC2A18BD28E353D600E26139 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2A18BC28E353D600E26139 /* SidebarView.swift */; };
 		AC86F3C428DEDDB600F5EF90 /* GaNaDaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */; };
 		AC86F3C628DEDDB600F5EF90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86F3C528DEDDB600F5EF90 /* ContentView.swift */; };
 		AC86F3C828DEDDB600F5EF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */; };
 		AC86F3CB28DEDDB600F5EF90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */; };
+		ACD6963C28E436D100BCA455 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6963B28E436D100BCA455 /* OnboardingView.swift */; };
+		ACD6963E28E4370900BCA455 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6963D28E4370900BCA455 /* PageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC24D82D28E18D670022212D /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
-		AC2A18BC28E353D600E26139 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		AC2A18BC28E353D600E26139 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		AC86F3C028DEDDB600F5EF90 /* GaNaDa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaNaDa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaNaDaApp.swift; sourceTree = "<group>"; };
 		AC86F3C528DEDDB600F5EF90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACD6963B28E436D100BCA455 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		ACD6963D28E4370900BCA455 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,9 @@
 			children = (
 				AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */,
 				AC86F3C528DEDDB600F5EF90 /* ContentView.swift */,
-				AC2A18BC28E353D600E26139 /* MenuBarView.swift */,
-				AC24D82D28E18D670022212D /* OnboardingData.swift */,
+				ACD6963D28E4370900BCA455 /* PageView.swift */,
+				ACD6963B28E436D100BCA455 /* OnboardingView.swift */,
+				AC2A18BC28E353D600E26139 /* SidebarView.swift */,
 				AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */,
 				AC86F3C928DEDDB600F5EF90 /* Preview Content */,
 			);
@@ -144,9 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC24D82E28E18D670022212D /* OnboardingData.swift in Sources */,
-				AC2A18BD28E353D600E26139 /* MenuBarView.swift in Sources */,
+				ACD6963E28E4370900BCA455 /* PageView.swift in Sources */,
+				AC2A18BD28E353D600E26139 /* SidebarView.swift in Sources */,
 				AC86F3C628DEDDB600F5EF90 /* ContentView.swift in Sources */,
+				ACD6963C28E436D100BCA455 /* OnboardingView.swift in Sources */,
 				AC86F3C428DEDDB600F5EF90 /* GaNaDaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

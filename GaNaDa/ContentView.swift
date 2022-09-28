@@ -6,6 +6,7 @@
 //
 import SwiftUI
 struct ContentView: View {
+    
     @State var shouldShowOnboarding: Bool = true
     @State private var showingScore = false
     @State private var scoreTitle = ""
@@ -17,22 +18,30 @@ struct ContentView: View {
     @State var showSidebar: Bool = false
     
     var isLastRound: Bool { gameCount == 10 }
+    let description = [
+        "에스토니아" :  "같은 크기의 가로 줄무늬 3개가 있는 깃발. 위쪽 줄무늬 파란색, 중간 줄무늬 검은색, 아래쪽 줄무늬 흰색" ,
+        "프랑스" :  "같은 크기의 세로 줄무늬 3개가 있는 깃발. 왼쪽 줄무늬 파란색, 중간 줄무늬 흰색, 오른쪽 줄무늬 빨간색" ,
+        "독일" :  "같은 크기의 가로 줄무늬 3개가 있는 깃발. 위쪽 줄무늬 검정, 중간 줄무늬 빨간색, 아래쪽 줄무늬 금색" ,
+        "아일랜드" :  "같은 크기의 세로 줄무늬 3개가 있는 깃발. 왼쪽 줄무늬는 녹색, 중간 줄무늬는 흰색, 오른쪽 줄무늬는 주황색" ,
+        "이탈리아":  "같은 크기의 세로 줄무늬 3개가 있는 깃발. 왼쪽 줄무늬 녹색, 중간 줄무늬 흰색, 오른쪽 줄무늬 빨간색" ,
+        "나이지리아" :  "같은 크기의 세로 줄무늬 3개가 있는 깃발. 왼쪽 줄무늬 녹색, 중간 줄무늬 흰색, 오른쪽 줄무늬 녹색" ,
+        "폴란드" :  "같은 크기의 가로 줄무늬 2개가 있는 깃발. 위쪽 줄무늬는 흰색이고 아래쪽 줄무늬는 빨간색입니다." ,
+        "러시아" :  "같은 크기의 가로 줄무늬 3개가 있는 깃발. 위쪽 줄무늬 흰색, 중간 줄무늬 파란색, 아래쪽 줄무늬 빨간색" ,
+        "스페인" :  "세 개의 가로 줄무늬가 있는 깃발. 위쪽 가는 줄무늬 빨간색, 왼쪽에 문장이 있는 중간 두꺼운 줄무늬 금색, 아래쪽 가는 줄무늬 빨간색" ,
+        "영국" :  "파란색 배경에 직선 및 대각선으로 겹치는 빨간색 및 흰색 십자가가 있다" ,
+        "미국" :  "같은 크기의 빨간색과 흰색 줄무늬가 있는 플래그, 왼쪽 상단 모서리의 파란색 배경에 흰색 별이 있다."
+    ]
     
-    
-    
-    @State private var countries = ["안녕하세요","감사합니다", "안녕히계세요", "잘먹겠습니다", "오늘은 목요일입니다.", "오늘 뭐해요?", "만나서 반가워요", "오늘 날씨 어때요?", "이거 얼마에요?", "지금 몇시인가요?", "저는 한국 사람입니다.", "죄송합니다"].shuffled()
+    @State private var countries = ["안녕하세요","감사합니다","생일 축하해요"].shuffled()
     
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var tappedFlag = ""
     var body: some View {
-  
+        
         NavigationView {
             
             VStack {
-
-                Spacer()
-                
-                Text("Guess the Flag!")
+                Text("Guess the Flag")
                 
                     .font(.largeTitle.bold())
                 
@@ -45,7 +54,7 @@ struct ContentView: View {
                         Text("아래 단어와 일치하는 영어 문장을 고르세요")
                         
                             .foregroundColor(.secondary)
-    
+                        
                             .font(.subheadline.weight(.heavy))
                         
                         
@@ -65,6 +74,8 @@ struct ContentView: View {
                             
                         } label: {
                             Image(countries[number])
+                                .resizable()
+                                .frame(width: 200.0, height: 100.0)
                                 .clipShape(RoundedRectangle(cornerRadius: 20))
                                 .shadow(radius: 5)
                                 .rotation3DEffect(.degrees(showingScore && tappedFlag == countries[number] ? 360 : 0), axis: (x: 0, y: 1, z: 0))
@@ -99,137 +110,88 @@ struct ContentView: View {
                 Spacer()
                 
                 
-                
-                
-                
             }
             
             .padding()
             
-            
-            
-            .navigationTitle("Guess the Hangul!")
+            .navigationTitle("Guess the Hangul")
+            .fullScreenCover(isPresented: $shouldShowOnboarding, content: { OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
+            })
         }
-        .fullScreenCover(isPresented: $shouldShowOnboarding, content: { OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
-        })
-    }
-}
-
-
-// onboarding
-struct OnboardingView: View {
-    @Binding var shouldShowOnboarding: Bool
-    var body: some View {
-        TabView {
-            PageView(title: "How well do you know Korean?",
-                     subtitle: "Until now, it was not easy to learn Korean. But what about with GaNaDa?",
-                     imageName: "king",
-                     subimageName:"gyeongbokgung-palace",
-                     showsDismissButton: false,
-                     shouldShowOnboarding: $shouldShowOnboarding
-            )
+        .alert(scoreTitle,isPresented:  $showingScore) {
+            
+            Button(alertAction) {
                 
-            PageView(title: "Learn",
-                     subtitle: "간단한 게임으로 다양한 한국어를 학습 해보세요",
-                     imageName: "student",
-                     subimageName:"south-korea",
-                     showsDismissButton: false,
-                     shouldShowOnboarding: $shouldShowOnboarding
-            
-            )
-            
-            
-            PageView(title: "블라블라",
-                     subtitle: "",
-                     imageName: "",
-                     subimageName:"",
-                     showsDismissButton: false,
-                     shouldShowOnboarding: $shouldShowOnboarding
-            
-            )
+                askQuestion()
                 
-            
-            PageView(title: "블라블라",
-                     subtitle: "",
-                     imageName: "",
-                     subimageName:"",
-                     showsDismissButton: true,
-                     shouldShowOnboarding: $shouldShowOnboarding
-            
-            )
-                
+            }
             
             
+            
+        } message: {
+            
+            Text(scoreMessage)
             
         }
-        .tabViewStyle(PageTabViewStyle())
     }
-}
-
-struct PageView: View {
-    let title: String
-    let subtitle: String
-    let imageName: String
-    let subimageName: String
-    let showsDismissButton: Bool
-    @Binding var shouldShowOnboarding: Bool
-    @State private var isAnimating: Bool = false
     
-    var body: some View {
-        VStack(spacing: 20) {
-            ZStack {
-                
-     Spacer()
-     Spacer()
-                Image(imageName)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 200.0, height: 200.0)
-                    .offset(x: 0, y: 150)
-                    .overlay(
-                        Image(subimageName)
-                            .resizable()
-                            .scaledToFit()
-                            .offset(x: 0, y: -50)
-                        
-                    )
-                        } //이미지 두개 겹쳐 보이게 하기
-            
-               
     
-                
-                Text(title)
-                    .font(.title2)
-                    .bold()
-                    .padding()
-                
+    func flagTapped(_ number:Int) {
         
-                Text(subtitle)
-                .font(.headline)
-                .multilineTextAlignment(.center)
-                .frame(maxWidth: 250)
-                .foregroundColor(Color(red: 237 / 255, green: 203 / 255, blue: 150 / 255))
-                .shadow(color: Color.black.opacity(0.1), radius: 1, x: 2, y: 2)
+        tappedFlag = countries[number]
+        
+        showingScore = true 
+        
+        gameCount += 1
+        
+        
+        
+        if number == correctAnswer {
             
-                if showsDismissButton {
-                    Button(action: {
-                        shouldShowOnboarding.toggle()
-                    }, label: {
-                        Text("Get Start")
-                            .bold()
-                            .frame(width: 200, height: 50)
-                            .background(Color.yellow)
-                            .cornerRadius(6)
-           
-                    })
-                }
+            score += 10
+            
+            
+            scoreTitle  = isLastRound ? "게임 종료" : "정답입니다!"
+            
+            scoreMessage = isLastRound ? "당신의 최종 점수는 \(score) 입니다." : "당신의 점수는 \(score) 입니다."
+            
+        } else {
+            
+            scoreTitle = isLastRound ? "게임 종료" : "오답입니다!"
+            
+            scoreMessage = "선택하신 정답은 \(countries[number])의 국기입니다"
+            
         }
+        
+        
+        
+        alertAction = isLastRound ? "게임 다시 하기" : "확인"
+         
+    }
+    
+    
+    
+    func askQuestion() {
+        
+        if isLastRound {
+            
+            gameCount = 0
+            
+            score = 0
+            
+        }
+        
+        
+        
+        countries = countries.shuffled()
+        
+        correctAnswer = Int.random(in: 0...2)
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
-

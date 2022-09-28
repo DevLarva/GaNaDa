@@ -5,7 +5,7 @@
 //  Created by 백대홍 on 2022/09/28.
 //
 import SwiftUI
-struct MenuBarView: View {
+struct SidebarView: View {
     var body: some View {
            VStack(alignment: .leading){
                HStack{
@@ -44,8 +44,8 @@ struct MenuBarView: View {
        }
    }
 
-struct MenuBarView_Previews: PreviewProvider {
+struct SidebarView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuBarView()
+        SidebarView()
     }
 }
