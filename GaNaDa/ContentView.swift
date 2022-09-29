@@ -1,47 +1,75 @@
-//
-//  ContentView.swift
-//  GaNaDa
-//
-//  Created by 백대홍 on 2022/09/24.
-//
 import SwiftUI
+
+
+
 struct ContentView: View {
     
-    @State var shouldShowOnboarding: Bool = true
     @State private var showingScore = false
     @State private var scoreTitle = ""
     @State private var scoreMessage = ""
+    
+    @State var shouldShowOnboarding: Bool = true
+    
     @State private var score = 0
     @State private var gameCount = 0
     @State private var alertAction = ""
     
-    @State var showSidebar: Bool = false
-    
+
     var isLastRound: Bool { gameCount == 10 }
-    let description = [
-        "에스토니아" :  "같은 크기의 가로 줄무늬 3개가 있는 깃발. 위쪽 줄무늬 파란색, 중간 줄무늬 검은색, 아래쪽 줄무늬 흰색" ,
-        "프랑스" :  "같은 크기의 세로 줄무늬 3개가 있는 깃발. 왼쪽 줄무늬 파란색, 중간 줄무늬 흰색, 오른쪽 줄무늬 빨간색" ,
-        "독일" :  "같은 크기의 가로 줄무늬 3개가 있는 깃발. 위쪽 줄무늬 검정, 중간 줄무늬 빨간색, 아래쪽 줄무늬 금색" ,
-        "아일랜드" :  "같은 크기의 세로 줄무늬 3개가 있는 깃발. 왼쪽 줄무늬는 녹색, 중간 줄무늬는 흰색, 오른쪽 줄무늬는 주황색" ,
-        "이탈리아":  "같은 크기의 세로 줄무늬 3개가 있는 깃발. 왼쪽 줄무늬 녹색, 중간 줄무늬 흰색, 오른쪽 줄무늬 빨간색" ,
-        "나이지리아" :  "같은 크기의 세로 줄무늬 3개가 있는 깃발. 왼쪽 줄무늬 녹색, 중간 줄무늬 흰색, 오른쪽 줄무늬 녹색" ,
-        "폴란드" :  "같은 크기의 가로 줄무늬 2개가 있는 깃발. 위쪽 줄무늬는 흰색이고 아래쪽 줄무늬는 빨간색입니다." ,
-        "러시아" :  "같은 크기의 가로 줄무늬 3개가 있는 깃발. 위쪽 줄무늬 흰색, 중간 줄무늬 파란색, 아래쪽 줄무늬 빨간색" ,
-        "스페인" :  "세 개의 가로 줄무늬가 있는 깃발. 위쪽 가는 줄무늬 빨간색, 왼쪽에 문장이 있는 중간 두꺼운 줄무늬 금색, 아래쪽 가는 줄무늬 빨간색" ,
-        "영국" :  "파란색 배경에 직선 및 대각선으로 겹치는 빨간색 및 흰색 십자가가 있다" ,
-        "미국" :  "같은 크기의 빨간색과 흰색 줄무늬가 있는 플래그, 왼쪽 상단 모서리의 파란색 배경에 흰색 별이 있다."
-    ]
     
-    @State private var countries = ["안녕하세요","감사합니다","생일 축하해요"].shuffled()
+    
+    @State private var words = ["Hello","Thank You","Happy birthday","It's delicious","i like you","It's ok","Do you have time tomorrow","How are you?","What are you doing","I'm happy","Happy new year","Good night","where are you from?","See you tomorrow"].shuffled()
     
     @State private var correctAnswer = Int.random(in: 0...2)
-    @State private var tappedFlag = ""
+    @State private var tappedBox = ""
+    
+    let description = [
+        "Hello" :  "It's a word you use to greet each other." ,
+        "Thank You" :  "It's a word used to express gratitude to the other person." ,
+        "Happy birthday" :  "It's a word used to celebrate a birthday." ,
+        "It's delicious" :  "It means delicious" ,
+        "i like you" :  "It means that I like you" ,
+        "It's ok" :  "This means it's okay" ,
+        "Do you have time tomorrow" :  "It is often used to make an appointment with the other person by saying, What are you doing tomorrow?" ,
+        "How are you?" :  "It is used a lot to ask how the other person is doing." ,
+        "What are you doing" :  "It's a word you use when you wonder what the other person is doing." ,
+        "I'm happy" :  "It means that I'm very happy right now" ,
+        "Happy new year" :  "It's a word used to say New Year's greetings.",
+        "Good night" : "It's a word I use before I go to bed.",
+        "where are you from?" : "It means asking which country the other person is from.",
+        "See you tomorrow" : "It means to see you tomorrow, so it is usually used for those who break up and see you later."
+    ]
+    
+    
     var body: some View {
         
-        NavigationView {
+        ZStack {
+            
+            RoundedRectangle(cornerRadius: 20)
+            
+                .fill(
+                    
+                    AngularGradient(gradient: Gradient(colors: [Color.purple, Color.yellow]),
+                                    
+                                    center: .topLeading,
+                                    
+                                    angle: .degrees(180 + 45))
+                    
+                )
+            
+                .ignoresSafeArea()
+            
+            
+            
+            
             
             VStack {
-                Text("Guess the Flag")
+                
+                Spacer()
+                
+                
+                
+                Text("Guess the Hangul!")
                 
                     .font(.largeTitle.bold())
                 
@@ -51,15 +79,15 @@ struct ContentView: View {
                     
                     VStack {
                         
-                        Text("아래 단어와 일치하는 영어 문장을 고르세요")
+                        Text("Choose a word that matches each other")
                         
                             .foregroundColor(.secondary)
-                        
+    
                             .font(.subheadline.weight(.heavy))
                         
                         
                         
-                        Text(countries[correctAnswer])
+                        Text(words[correctAnswer])
                         
                             .font(.largeTitle.weight(.semibold))
                         
@@ -71,22 +99,26 @@ struct ContentView: View {
                         
                         Button {
                             
+                            flagTapped(number)
                             
                         } label: {
-                            Image(countries[number])
+                            Image(words[number])
                                 .resizable()
                                 .frame(width: 200.0, height: 100.0)
                                 .clipShape(RoundedRectangle(cornerRadius: 20))
                                 .shadow(radius: 5)
-                                .rotation3DEffect(.degrees(showingScore && tappedFlag == countries[number] ? 360 : 0), axis: (x: 0, y: 1, z: 0))
-                                .opacity(showingScore && tappedFlag != countries[number] ? 0.25 : 1)
+                                .rotation3DEffect(.degrees(showingScore && tappedBox == words[number] ? 360 : 0), axis: (x: 0, y: 1, z: 0))
+                                .opacity(showingScore && tappedBox != words[number] ? 0.25 : 1)
                                 .animation(.spring(), value: gameCount)
+                                .accessibilityLabel(description[words[number], default: "Unknown Box."])
+                            
                             
                         }
                         
                         
                     }
-                    
+                    .fullScreenCover(isPresented: $shouldShowOnboarding, content: { OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
+                    })
                 }
                 
                 .frame(maxWidth: .infinity)
@@ -101,7 +133,7 @@ struct ContentView: View {
                 
                 
                 
-                Text("점수: \(score)")
+                Text("Score: \(score)")
                 
                     .foregroundColor(.white)
                 
@@ -110,14 +142,17 @@ struct ContentView: View {
                 Spacer()
                 
                 
+                
+                
+                
             }
             
             .padding()
             
-            .navigationTitle("Guess the Hangul")
-            .fullScreenCover(isPresented: $shouldShowOnboarding, content: { OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
-            })
+            
+            
         }
+        
         .alert(scoreTitle,isPresented:  $showingScore) {
             
             Button(alertAction) {
@@ -133,14 +168,14 @@ struct ContentView: View {
             Text(scoreMessage)
             
         }
+        
     }
-    
     
     func flagTapped(_ number:Int) {
         
-        tappedFlag = countries[number]
+        tappedBox = words[number]
         
-        showingScore = true 
+        showingScore = true
         
         gameCount += 1
         
@@ -151,22 +186,22 @@ struct ContentView: View {
             score += 10
             
             
-            scoreTitle  = isLastRound ? "게임 종료" : "정답입니다!"
+            scoreTitle  = isLastRound ? "Game Over" : "Correct!"
             
-            scoreMessage = isLastRound ? "당신의 최종 점수는 \(score) 입니다." : "당신의 점수는 \(score) 입니다."
+            scoreMessage = isLastRound ? "Your final score is \(score)" : "Your score is \(score) "
             
         } else {
             
-            scoreTitle = isLastRound ? "게임 종료" : "오답입니다!"
+            scoreTitle = isLastRound ? "Game Over" : "wrong answer"
             
-            scoreMessage = "선택하신 정답은 \(countries[number])의 국기입니다"
+            scoreMessage = "The answer you chose mean \(words[number]) in English."
             
         }
         
         
         
-        alertAction = isLastRound ? "게임 다시 하기" : "확인"
-         
+        alertAction = isLastRound ? "Restart" : "Confirm"
+        
     }
     
     
@@ -183,15 +218,24 @@ struct ContentView: View {
         
         
         
-        countries = countries.shuffled()
+        words = words.shuffled()
         
         correctAnswer = Int.random(in: 0...2)
+        
     }
+    
+    
+    
 }
 
 
+
 struct ContentView_Previews: PreviewProvider {
+    
     static var previews: some View {
+        
         ContentView()
+        
     }
+    
 }
