@@ -14,6 +14,11 @@
 		AC86F3CB28DEDDB600F5EF90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */; };
 		ACD6963C28E436D100BCA455 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6963B28E436D100BCA455 /* OnboardingView.swift */; };
 		ACD6963E28E4370900BCA455 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6963D28E4370900BCA455 /* PageView.swift */; };
+		ACD8320A28E825310045A43C /* SlidingMenuNTabViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8320928E825310045A43C /* SlidingMenuNTabViewApp.swift */; };
+		ACD8320C28E825460045A43C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8320B28E825460045A43C /* HomeView.swift */; };
+		ACD8320E28E825640045A43C /* SideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8320D28E825640045A43C /* SideView.swift */; };
+		ACD8321028E825780045A43C /* TapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8320F28E825780045A43C /* TapButton.swift */; };
+		ACD8321228E8258B0045A43C /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8321128E8258B0045A43C /* CustomCorners.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,11 @@
 		AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACD6963B28E436D100BCA455 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		ACD6963D28E4370900BCA455 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		ACD8320928E825310045A43C /* SlidingMenuNTabViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingMenuNTabViewApp.swift; sourceTree = "<group>"; };
+		ACD8320B28E825460045A43C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		ACD8320D28E825640045A43C /* SideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideView.swift; sourceTree = "<group>"; };
+		ACD8320F28E825780045A43C /* TapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapButton.swift; sourceTree = "<group>"; };
+		ACD8321128E8258B0045A43C /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,11 @@
 			children = (
 				AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */,
 				AC86F3C528DEDDB600F5EF90 /* ContentView.swift */,
+				ACD8320928E825310045A43C /* SlidingMenuNTabViewApp.swift */,
+				ACD8320B28E825460045A43C /* HomeView.swift */,
+				ACD8320D28E825640045A43C /* SideView.swift */,
+				ACD8320F28E825780045A43C /* TapButton.swift */,
+				ACD8321128E8258B0045A43C /* CustomCorners.swift */,
 				ACD6963D28E4370900BCA455 /* PageView.swift */,
 				ACD6963B28E436D100BCA455 /* OnboardingView.swift */,
 				AC2A18BC28E353D600E26139 /* SidebarView.swift */,
@@ -148,10 +163,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACD6963E28E4370900BCA455 /* PageView.swift in Sources */,
+				ACD8320E28E825640045A43C /* SideView.swift in Sources */,
+				ACD8320C28E825460045A43C /* HomeView.swift in Sources */,
 				AC2A18BD28E353D600E26139 /* SidebarView.swift in Sources */,
+				ACD8321028E825780045A43C /* TapButton.swift in Sources */,
 				AC86F3C628DEDDB600F5EF90 /* ContentView.swift in Sources */,
 				ACD6963C28E436D100BCA455 /* OnboardingView.swift in Sources */,
 				AC86F3C428DEDDB600F5EF90 /* GaNaDaApp.swift in Sources */,
+				ACD8320A28E825310045A43C /* SlidingMenuNTabViewApp.swift in Sources */,
+				ACD8321228E8258B0045A43C /* CustomCorners.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +304,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GaNaDa/Preview Content\"";
 				DEVELOPMENT_TEAM = 8N7YRTC92N;
 				ENABLE_PREVIEWS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -313,6 +334,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GaNaDa/Preview Content\"";
 				DEVELOPMENT_TEAM = 8N7YRTC92N;
 				ENABLE_PREVIEWS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

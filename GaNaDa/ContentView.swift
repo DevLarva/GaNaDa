@@ -7,15 +7,23 @@ struct ContentView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
     @State private var scoreMessage = ""
-    
     @State var shouldShowOnboarding: Bool = true
-    
     @State private var score = 0
     @State private var gameCount = 0
     @State private var alertAction = ""
     
 
     var isLastRound: Bool { gameCount == 10 }
+    @State var selectedTitle = "Main"
+    @State var showSide = false
+    //Sliding을 위한 변수
+    @State var translation: CGSize = .zero
+    @State var offsetX: CGFloat = -120
+    
+    //TabView를 사용하면(스크롤 미사용시) 보이지 않는 페이지버튼이 하단에 TabBar로 생성된다. 이것을 제거하는 초기화 코드
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
     
     
     @State private var words = ["Hello","Thank You","Happy birthday","It's delicious","i like you","It's ok","Do you have time tomorrow","How are you?","What are you doing","I'm happy","Happy new year","Good night","where are you from?","See you tomorrow"].shuffled()
@@ -66,7 +74,7 @@ struct ContentView: View {
             VStack {
                 
                 Spacer()
-                
+               
                 
                 
                 Text("Guess the Hangul!")
@@ -76,6 +84,7 @@ struct ContentView: View {
                     .foregroundColor(.white)
                 
                 VStack(spacing:30) {
+                    
                     
                     VStack {
                         
@@ -194,7 +203,7 @@ struct ContentView: View {
             
             scoreTitle = isLastRound ? "Game Over" : "wrong answer"
             
-            scoreMessage = "The answer you chose mean \(words[number]) in English."
+            scoreMessage = "The answer you chose mean \(words[number]) in Korean."
             
         }
         
