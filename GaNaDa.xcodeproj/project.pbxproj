@@ -7,34 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC2A18BD28E353D600E26139 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2A18BC28E353D600E26139 /* SidebarView.swift */; };
+		AC3CB56928EB0357009B93EF /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CB56828EB0357009B93EF /* OnboardingView.swift */; };
+		AC3CB56B28EB0374009B93EF /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CB56A28EB0374009B93EF /* PageView.swift */; };
+		AC3CB57B28EB1712009B93EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CB57A28EB1712009B93EF /* HomeView.swift */; };
+		AC3CB57F28EB1737009B93EF /* SideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CB57C28EB1737009B93EF /* SideView.swift */; };
+		AC3CB58028EB1737009B93EF /* SlidingMenuNTabViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CB57D28EB1737009B93EF /* SlidingMenuNTabViewApp.swift */; };
+		AC3CB58128EB1737009B93EF /* TapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CB57E28EB1737009B93EF /* TapButton.swift */; };
+		AC3CB58328EB1772009B93EF /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CB58228EB1772009B93EF /* CustomCorners.swift */; };
 		AC86F3C428DEDDB600F5EF90 /* GaNaDaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */; };
 		AC86F3C628DEDDB600F5EF90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86F3C528DEDDB600F5EF90 /* ContentView.swift */; };
 		AC86F3C828DEDDB600F5EF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */; };
 		AC86F3CB28DEDDB600F5EF90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */; };
-		ACD6963C28E436D100BCA455 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6963B28E436D100BCA455 /* OnboardingView.swift */; };
-		ACD6963E28E4370900BCA455 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6963D28E4370900BCA455 /* PageView.swift */; };
-		ACD8320A28E825310045A43C /* SlidingMenuNTabViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8320928E825310045A43C /* SlidingMenuNTabViewApp.swift */; };
-		ACD8320C28E825460045A43C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8320B28E825460045A43C /* HomeView.swift */; };
-		ACD8320E28E825640045A43C /* SideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8320D28E825640045A43C /* SideView.swift */; };
-		ACD8321028E825780045A43C /* TapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8320F28E825780045A43C /* TapButton.swift */; };
-		ACD8321228E8258B0045A43C /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8321128E8258B0045A43C /* CustomCorners.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC2A18BC28E353D600E26139 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		AC3CB56828EB0357009B93EF /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		AC3CB56A28EB0374009B93EF /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		AC3CB57A28EB1712009B93EF /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ../../Test/Test/HomeView.swift; sourceTree = "<group>"; };
+		AC3CB57C28EB1737009B93EF /* SideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideView.swift; path = ../../Test/Test/SideView.swift; sourceTree = "<group>"; };
+		AC3CB57D28EB1737009B93EF /* SlidingMenuNTabViewApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlidingMenuNTabViewApp.swift; path = ../../Test/Test/SlidingMenuNTabViewApp.swift; sourceTree = "<group>"; };
+		AC3CB57E28EB1737009B93EF /* TapButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TapButton.swift; path = ../../Test/Test/TapButton.swift; sourceTree = "<group>"; };
+		AC3CB58228EB1772009B93EF /* CustomCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCorners.swift; path = ../../Test/Test/CustomCorners.swift; sourceTree = "<group>"; };
 		AC86F3C028DEDDB600F5EF90 /* GaNaDa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaNaDa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaNaDaApp.swift; sourceTree = "<group>"; };
 		AC86F3C528DEDDB600F5EF90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		ACD6963B28E436D100BCA455 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		ACD6963D28E4370900BCA455 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
-		ACD8320928E825310045A43C /* SlidingMenuNTabViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingMenuNTabViewApp.swift; sourceTree = "<group>"; };
-		ACD8320B28E825460045A43C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		ACD8320D28E825640045A43C /* SideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideView.swift; sourceTree = "<group>"; };
-		ACD8320F28E825780045A43C /* TapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapButton.swift; sourceTree = "<group>"; };
-		ACD8321128E8258B0045A43C /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,14 +67,13 @@
 			children = (
 				AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */,
 				AC86F3C528DEDDB600F5EF90 /* ContentView.swift */,
-				ACD8320928E825310045A43C /* SlidingMenuNTabViewApp.swift */,
-				ACD8320B28E825460045A43C /* HomeView.swift */,
-				ACD8320D28E825640045A43C /* SideView.swift */,
-				ACD8320F28E825780045A43C /* TapButton.swift */,
-				ACD8321128E8258B0045A43C /* CustomCorners.swift */,
-				ACD6963D28E4370900BCA455 /* PageView.swift */,
-				ACD6963B28E436D100BCA455 /* OnboardingView.swift */,
-				AC2A18BC28E353D600E26139 /* SidebarView.swift */,
+				AC3CB56828EB0357009B93EF /* OnboardingView.swift */,
+				AC3CB57A28EB1712009B93EF /* HomeView.swift */,
+				AC3CB58228EB1772009B93EF /* CustomCorners.swift */,
+				AC3CB56A28EB0374009B93EF /* PageView.swift */,
+				AC3CB57C28EB1737009B93EF /* SideView.swift */,
+				AC3CB57D28EB1737009B93EF /* SlidingMenuNTabViewApp.swift */,
+				AC3CB57E28EB1737009B93EF /* TapButton.swift */,
 				AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */,
 				AC86F3C928DEDDB600F5EF90 /* Preview Content */,
 			);
@@ -162,16 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD6963E28E4370900BCA455 /* PageView.swift in Sources */,
-				ACD8320E28E825640045A43C /* SideView.swift in Sources */,
-				ACD8320C28E825460045A43C /* HomeView.swift in Sources */,
-				AC2A18BD28E353D600E26139 /* SidebarView.swift in Sources */,
-				ACD8321028E825780045A43C /* TapButton.swift in Sources */,
+				AC3CB56B28EB0374009B93EF /* PageView.swift in Sources */,
 				AC86F3C628DEDDB600F5EF90 /* ContentView.swift in Sources */,
-				ACD6963C28E436D100BCA455 /* OnboardingView.swift in Sources */,
+				AC3CB57F28EB1737009B93EF /* SideView.swift in Sources */,
+				AC3CB56928EB0357009B93EF /* OnboardingView.swift in Sources */,
+				AC3CB58128EB1737009B93EF /* TapButton.swift in Sources */,
+				AC3CB57B28EB1712009B93EF /* HomeView.swift in Sources */,
 				AC86F3C428DEDDB600F5EF90 /* GaNaDaApp.swift in Sources */,
-				ACD8320A28E825310045A43C /* SlidingMenuNTabViewApp.swift in Sources */,
-				ACD8321228E8258B0045A43C /* CustomCorners.swift in Sources */,
+				AC3CB58028EB1737009B93EF /* SlidingMenuNTabViewApp.swift in Sources */,
+				AC3CB58328EB1772009B93EF /* CustomCorners.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
