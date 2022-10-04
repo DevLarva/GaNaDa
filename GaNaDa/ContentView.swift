@@ -12,7 +12,7 @@ struct ContentView: View {
     @State var translation: CGSize = .zero
     @State var offsetX: CGFloat = -120
     
-    
+
     //TabView를 사용하면(스크롤 미사용시) 보이지 않는 페이지버튼이 하단에 TabBar로 생성된다. 이것을 제거하는 초기화 코드
     init() {
         UITabBar.appearance().isHidden = true
@@ -54,7 +54,7 @@ struct ContentView: View {
             })//overlay
         }
         //홈과 사이드 메뉴가 움직이도록 하는 오프셋
-        .offset(x: (translation.width + offsetX) > -120 ? ((translation.width + offsetX) < 120 ? translation.width + offsetX : 120 ) : -120)
+        .offset(x: (translation.width + offsetX) > -110 ? ((translation.width + offsetX) < 110 ? translation.width + offsetX : 120 ) : -120)
         //사이드메뉴 버튼으로 showSide값에 변화가 있을 때, 사이드 메뉴 열기
         .onChange(of: showSide) {_ in
             withAnimation(.spring()) {
