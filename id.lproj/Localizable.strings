@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  GaNaDa
+
+  Created by 백대홍 on 2022/10/05.
+  
+*/
+"SideView" = "Tampilan Samping";
+"Choose a word that matches each other" = "Pilih kata yang cocok satu sama lain";
+"Score: %lld" = "Skor: %lld";
+"Guess the Hangul!" = "Tebak Hangul!";
+"what did you study today?" = "Apa yang kau pelajari hari ini?";
+"your task" = "tugas Anda";
+"Get Start" = "Mulai";

@@ -145,7 +145,7 @@ struct MainView: View {
                 
                 Text("Score: \(score)")
                 
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                 
                     .font(.title.bold())
                 

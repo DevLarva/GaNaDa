@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  GaNaDa
+
+  Created by 백대홍 on 2022/10/05.
+  
+*/
+"SideView" = "侧视图";
+"Choose a word that matches each other" = "选择一个相互匹配的词";
+"Score: %lld" = "得分: %lld";
+"Guess the Hangul!" = "猜韩文!";
+"what did you study today?" = "你今天学了什么 ?";
+"your task" = "你的任务";

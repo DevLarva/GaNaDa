@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  GaNaDa
+
+  Created by 백대홍 on 2022/10/05.
+  
+*/
+
+"SideView" = "& Xem bên";
+"Get Start" = "Bắt đầu";
+"Choose a word that matches each other" = "Chọn một từ phù hợp với nhau";
+"Guess the Hangul!" = "Đoán tiếng Hàn đi!";
+"Score: %lld" = "Ghi điểm: %lld";
+"what did you study today?" = "hôm nay bạn đã học gì?";
+"your task" = "nhiệm vụ của anh";

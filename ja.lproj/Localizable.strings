@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  GaNaDa
+
+  Created by 백대홍 on 2022/10/05.
+  
+*/
+"Hello" = "おはようございます";
+"Guess the Hangul!" = "当ててみてください";
+"SideView" = "側面図";
+"Choose a word that matches each other" = "お互いに合う言葉を選びなさい";
+"what did you study today?" = "今日は何を勉強しましたか？";
+"your task"= "君の仕事";
+"Score: %lld" = "てんすう: %lld";
+
