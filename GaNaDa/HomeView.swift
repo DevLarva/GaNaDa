@@ -44,6 +44,7 @@ struct MainView: View {
     @State private var words = ["Hello","Thank You","Happy birthday","It's delicious","i like you","It's ok","Do you have time tomorrow","How are you?","What are you doing","I'm happy","Happy new year","Good night","where are you from?","See you tomorrow"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var tappedBox = ""
+    
     @State private var translated_word = [NSLocalizedString("Hello",comment: ""),NSLocalizedString("Thank You",comment: ""),NSLocalizedString("Happy birthday",comment:""),NSLocalizedString("It's delicious",comment: ""),NSLocalizedString("i like you",comment: ""),NSLocalizedString("It's ok",comment: ""),NSLocalizedString("Do you have time tomorrow",comment: ""),NSLocalizedString("How are you?",comment: ""),NSLocalizedString("What are you doing",comment: ""),NSLocalizedString("I'm happy",comment: ""), NSLocalizedString("Happy new year",comment: ""),NSLocalizedString("Good night",comment: ""),NSLocalizedString("where are you from?",comment: ""),NSLocalizedString("See you tomorrow",comment: "")].shuffled()
     
     let description = [
@@ -194,7 +195,7 @@ struct MainView: View {
             
             scoreTitle  = isLastRound ? NSLocalizedString("Game Over",comment: "") : NSLocalizedString("Correct!",comment: "")
             
-            scoreMessage = isLastRound ? NSLocalizedString("Your final score is \(score)",comment: "") : NSLocalizedString("Your score is \(score) ",comment: "")
+            scoreMessage = isLastRound ? "\(score)" : "A\(score)"
             
         } else {
             
@@ -300,10 +301,10 @@ struct MemoView: View {
     }
     
     func appendList() {
-         let inputList = TodoList(content: toDoString, checked: false)
-         todoLists.append(inputList)
-         toDoString = ""
-     }
+        let inputList = TodoList(content: toDoString, checked: false)
+        todoLists.append(inputList)
+        toDoString = ""
+    }
     
     func toggleCheckedState(_ i: Int) {
         todoLists[i].checked.toggle()
@@ -312,5 +313,5 @@ struct MemoView: View {
     func deleteList(_ i: Int) {
         todoLists.remove(at: i)
     }
+    
 }
-

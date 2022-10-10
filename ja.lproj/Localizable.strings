@@ -12,6 +12,8 @@
 "what did you study today?" = "今日は何を勉強しましたか？";
 "your task"= "君の仕事";
 "Score: %lld" = "てんすう: %lld";
+"score %lld" = "最終スコア:%lld";
+"A%lld" = "う%lld";
 
 //scoetitle
 "Confirm" = "確認";
@@ -20,9 +22,8 @@
 "wrong answer" = "間違った答え";
 
 //scoreMessage
-"Your final score is \(Score)" = "最後のスコアはです";
-"Your score is \(score)" = "最後のスコアはです";
-"The answer you chose mean  \(words[number]) in Korean.Please review it again in the notepad" = "皆さんが選んだ答えは韓国語です。メモ帳でもう一度確認してください";
+
+"The answer you chose mean %@ in Korean.Please review it again in the notepad" = "皆さんが選んだ答えは韓国語です。%@ メモ帳でもう一度確認してください";
 
 //translated_word
 "Hello" = "おはようございます";
