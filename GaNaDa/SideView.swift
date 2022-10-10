@@ -25,7 +25,6 @@ struct SideView: View {
                 VStack(spacing: 15) {
                     TapButton(image: "house", title: "Main", selectedTitle: $selectedTitle, namespace: namespace)
                     TapButton(image: "square.and.pencil", title: "vocabulary", selectedTitle: $selectedTitle, namespace: namespace)
-                    TapButton(image: "magnifyingglass", title: "translator", selectedTitle: $selectedTitle, namespace: namespace)
                 }
                 Spacer()
             }

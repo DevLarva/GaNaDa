@@ -5,7 +5,7 @@
   Created by 백대홍 on 2022/10/05.
   
 */
-"Hello" = "おはようございます";
+
 "Guess the Hangul!" = "当ててみてください";
 "SideView" = "側面図";
 "Choose a word that matches each other" = "お互いに合う言葉を選びなさい";
@@ -13,3 +13,29 @@
 "your task"= "君の仕事";
 "Score: %lld" = "てんすう: %lld";
 
+//scoetitle
+"Confirm" = "確認";
+"Game Over" = "ゲームオーバー";
+"Correct!" = "正しい";
+"wrong answer" = "間違った答え";
+
+//scoreMessage
+"Your final score is \(Score)" = "最後のスコアはです";
+"Your score is \(score)" = "最後のスコアはです";
+"The answer you chose mean  \(words[number]) in Korean.Please review it again in the notepad" = "皆さんが選んだ答えは韓国語です。メモ帳でもう一度確認してください";
+
+//translated_word
+"Hello" = "おはようございます";
+"Thank You" = "ありがとうございます";
+"Happy birthday" = "お誕生日おめでとうございます";
+"It's delicious" = "おいしいです";
+"i like you" = "あなたのことが好きです";
+"It's ok" = "大丈夫です";
+"Do you have time tomorrow" = "明日、時間ありますか？";
+"How are you?" = "お元気ですか ？";
+"What are you doing" = "何してるの";
+"I'm happy" = "私は満足しています";
+"Happy new year" = "明けましておめでとうございます";
+"Good night" = "おやすみ";
+"where are you from?" = "出身はどちらですか？";
+"See you tomorrow" = "また明日ね";

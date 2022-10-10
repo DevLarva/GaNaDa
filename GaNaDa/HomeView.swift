@@ -18,9 +18,6 @@ struct HomeView: View {
                 .tag("Main")
             MemoView()
                 .tag("vocabulary")
-            translatorView()
-                .tag("translator")
-            
         }
         .frame(width: getRect().width)
     }
@@ -45,9 +42,9 @@ struct MainView: View {
     @State var selectedTitle = "Main"
     @State var showSide = false
     @State private var words = ["Hello","Thank You","Happy birthday","It's delicious","i like you","It's ok","Do you have time tomorrow","How are you?","What are you doing","I'm happy","Happy new year","Good night","where are you from?","See you tomorrow"].shuffled()
-    
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var tappedBox = ""
+    @State private var translated_word = [NSLocalizedString("Hello",comment: ""),NSLocalizedString("Thank You",comment: ""),NSLocalizedString("Happy birthday",comment:""),NSLocalizedString("It's delicious",comment: ""),NSLocalizedString("i like you",comment: ""),NSLocalizedString("It's ok",comment: ""),NSLocalizedString("Do you have time tomorrow",comment: ""),NSLocalizedString("How are you?",comment: ""),NSLocalizedString("What are you doing",comment: ""),NSLocalizedString("I'm happy",comment: ""), NSLocalizedString("Happy new year",comment: ""),NSLocalizedString("Good night",comment: ""),NSLocalizedString("where are you from?",comment: ""),NSLocalizedString("See you tomorrow",comment: "")].shuffled()
     
     let description = [
         "Hello" :  "It's a word you use to greet each other." ,
@@ -96,10 +93,9 @@ struct MainView: View {
                         
                         
                         
-                        Text(words[correctAnswer])
+                        Text(translated_word[correctAnswer])
                         
                             .font(.largeTitle.weight(.semibold))
-                        
                     }
                     
                     
@@ -196,21 +192,21 @@ struct MainView: View {
             score += 10
             
             
-            scoreTitle  = isLastRound ? "Game Over" : "Correct!"
+            scoreTitle  = isLastRound ? NSLocalizedString("Game Over",comment: "") : NSLocalizedString("Correct!",comment: "")
             
-            scoreMessage = isLastRound ? "Your final score is \(score)" : "Your score is \(score) "
+            scoreMessage = isLastRound ? NSLocalizedString("Your final score is \(score)",comment: "") : NSLocalizedString("Your score is \(score) ",comment: "")
             
         } else {
             
-            scoreTitle = isLastRound ? "Game Over" : "wrong answer"
+            scoreTitle = isLastRound ? NSLocalizedString("Game Over",comment: "") : NSLocalizedString("wrong answer",comment: "")
             
-            scoreMessage = "The answer you chose mean \(words[number]) in Korean.Please review it again in the notepad"
+            scoreMessage = NSLocalizedString("The answer you chose mean \(words[number]) in Korean.Please review it again in the notepad",comment: "")
             
         }
         
         
         
-        alertAction = isLastRound ? "Restart" : "Confirm"
+        alertAction = isLastRound ? NSLocalizedString("Restart",comment: "") : NSLocalizedString("Confirm",comment: "")
         
     }
     
@@ -240,10 +236,6 @@ struct MainView: View {
 
 
 struct MemoView: View {
-    @State var users = ["안녕하세요", "내일 시간 돼?", "맛있어요"]
-    @State private var words = ["Hello 안녕하세","Thank You","Happy birthday","It's delicious","i like you","It's ok","Do you have time tomorrow","How are you?","What are you doing","I'm happy","Happy new year","Good night","where are you from?","See you tomorrow"]
-    
-    
     struct TodoList: Identifiable {
         let id = UUID()
         var content: String
@@ -319,18 +311,6 @@ struct MemoView: View {
     
     func deleteList(_ i: Int) {
         todoLists.remove(at: i)
-    }
-}
-struct translatorView: View {
-    var body: some View {
-        ZStack {
-            VStack {
-                Text("")
-                    .font(.largeTitle)
-                    .fontWeight(.heavy)
-                    .padding()
-            }
-        }
     }
 }
 
