@@ -12,8 +12,8 @@
 "what did you study today?" = "今日は何を勉強しましたか？";
 "your task"= "君の仕事";
 "Score: %lld" = "てんすう: %lld";
-"score %lld" = "最終スコア:%lld";
-"A%lld" = "う%lld";
+"Your final Score: %lld" = "最終スコア: %lld";
+"Score: %lld" = "てんすう: %lld";
 
 //scoetitle
 "Confirm" = "確認";

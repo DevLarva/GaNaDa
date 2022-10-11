@@ -195,13 +195,14 @@ struct MainView: View {
             
             scoreTitle  = isLastRound ? NSLocalizedString("Game Over",comment: "") : NSLocalizedString("Correct!",comment: "")
             
-            scoreMessage = isLastRound ? "\(score)" : "A\(score)"
+            scoreMessage = isLastRound ? String(localized: "Your final Score: \(score)",comment:"") : String(localized:"Score: \(score)",comment: "")
+            
             
         } else {
             
             scoreTitle = isLastRound ? NSLocalizedString("Game Over",comment: "") : NSLocalizedString("wrong answer",comment: "")
             
-            scoreMessage = NSLocalizedString("The answer you chose mean \(words[number]) in Korean.Please review it again in the notepad",comment: "")
+            scoreMessage = String(localized: "The answer you choose mean \(translated_word[number]) in Korean.Please review it again in the notepad",comment: "")
             
         }
         
@@ -263,7 +264,7 @@ struct MemoView: View {
                         }
                     )
                 }
-                .textFieldStyle(DefaultTextFieldStyle())
+                .textFieldStyle(.plain)
                 .frame(width: 300, height: 50, alignment: .center)
                 
                 List {
