@@ -23,7 +23,7 @@
 
 //scoreMessage
 
-"The answer you chose mean %@ in Korean.Please review it again in the notepad" = "皆さんが選んだ答えは韓国語です。%@ メモ帳でもう一度確認してください";
+"The answer you choose mean %@ in Korean.Please review it again in the notepad" = "皆さんが選んだ答えは韓国語です。%@ メモ帳でもう一度確認してください";
 
 //translated_word
 "Hello" = "おはようございます";
