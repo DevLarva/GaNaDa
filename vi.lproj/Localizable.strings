@@ -12,7 +12,16 @@
 "Guess the Hangul!" = "Đoán tiếng Hàn đi!";
 "Score: %lld" = "Ghi điểm: %lld";
 "what did you study today?" = "hôm nay bạn đã học gì?";
-"your task" = "nhiệm vụ của anh";
+"Type the word you want" = "Gõ từ bạn muốn";
+
+"Confirm" = "Xác nhận";
+"Game Over" = "Trò chơi kết thúc";
+"Correct!" = "Chính xác";
+"wrong answer" = "câu trả lời sai";
+
+//scoreMessage
+
+"The answer you choose mean %@ in Korean.Please review it again in the notepad" = "Câu trả lời bạn chọn có nghĩa là %@ trong tiếng Hàn.Vui lòng xem lại một lần nữa trong sổ ghi chú";
 
 //translated_word
 "Hello" = "Xin chào.";
@@ -21,11 +30,11 @@
 "It's delicious" = "Ngon quá!";
 "i like you" = "Tôi thích bạn";
 "It's ok" = "Không sao đâu.";
-"Do you have time tomorrow" = "明日、時間ありますか？";
-"How are you?" = "お元気ですか ？";
-"What are you doing" = "何してるの";
-"I'm happy" = "私は満足しています";
-"Happy new year" = "明けましておめでとうございます";
-"Good night" = "おやすみ";
-"where are you from?" = "出身はどちらですか？";
-"See you tomorrow" = "また明日ね";
+"Do you have time tomorrow" = "Ngày mai anh có thời gian không?";
+"How are you?" = "Anh khỏe không?";
+"What are you doing" = "Anh đang làm gì vậy?";
+"I'm happy" = "Tôi hạnh phúc.";
+"Happy new year" = "Chúc mừng năm mới";
+"Good night" = "Chúc ngủ ngon.";
+"where are you from?" = "Anh từ đâu đến?";
+"See you tomorrow" = "Mai gặp lại.";

@@ -10,7 +10,7 @@
 "SideView" = "側面図";
 "Choose a word that matches each other" = "お互いに合う言葉を選びなさい";
 "what did you study today?" = "今日は何を勉強しましたか？";
-"your task"= "君の仕事";
+"Type the word you want"= "ご希望の単語を入力してください";
 "Score: %lld" = "てんすう: %lld";
 "Your final Score: %lld" = "最終スコア: %lld";
 "Score: %lld" = "てんすう: %lld";
@@ -40,3 +40,5 @@
 "Good night" = "おやすみ";
 "where are you from?" = "出身はどちらですか？";
 "See you tomorrow" = "また明日ね";
+"Main" = "メイン画面";
+"vocabulary" = "単語帳";

@@ -9,14 +9,14 @@ import SwiftUI
 
 
 struct MemoView: View {
-    struct TodoList: Identifiable {
+    struct MemoList: Identifiable {
         let id = UUID()
         var content: String
         var checked: Bool
     }
     
-    @State var toDoString = ""
-    @State private var todoLists = [TodoList]()
+    @State var MemoString = ""
+    @State private var MemoLists = [MemoList]()
     
     var body: some View {
         ZStack {
@@ -28,8 +28,8 @@ struct MemoView: View {
                 HStack {
                     Image(systemName: "square.and.pencil")
                     TextField(
-                        "your task",
-                        text: $toDoString,
+                        "Type the word you want",
+                        text: $MemoString,
                         onCommit: {
                             appendList()
                         }
@@ -39,19 +39,19 @@ struct MemoView: View {
                 .frame(width: 300, height: 50, alignment: .center)
                 
                 List {
-                    ForEach(0..<todoLists.count, id: \.self) { i in
+                    ForEach(0..<MemoLists.count, id: \.self) { i in
                         HStack {
                             Button(action: {
                                 toggleCheckedState(i)
                             },
                                    label: {
                                 Image(systemName:
-                                        todoLists[i].checked == true ?
+                                        MemoLists[i].checked == true ?
                                       "checkmark.square" :
                                         "square")
                             }
                             )
-                            Text(todoLists[i].content)
+                            Text(MemoLists[i].content)
                             Spacer()
                             Button(
                                 action: {
@@ -73,17 +73,17 @@ struct MemoView: View {
     }
     
     func appendList() {
-        let inputList = TodoList(content: toDoString, checked: false)
-        todoLists.append(inputList)
-        toDoString = ""
+        let inputList = MemoList(content: MemoString, checked: false)
+        MemoLists.append(inputList)
+        MemoString = ""
     }
     
     func toggleCheckedState(_ i: Int) {
-        todoLists[i].checked.toggle()
+        MemoLists[i].checked.toggle()
     }
     
     func deleteList(_ i: Int) {
-        todoLists.remove(at: i)
+        MemoLists.remove(at: i)
     }
     
 }
