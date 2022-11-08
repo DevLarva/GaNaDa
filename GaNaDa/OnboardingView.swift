@@ -29,7 +29,7 @@ struct OnboardingView: View {
             )
             
             
-            PageView(title: String(localized:"Learning by Repetition ",comment: ""),
+            PageView(title: String(localized:"Learning by Repetition",comment: ""),
                      subtitle:  String(localized:"After completing the study, write it down in a notepad, and repeat the study!",comment: ""),
                      imageName: "student",
                      showsDismissButton: true,

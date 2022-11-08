@@ -3,7 +3,6 @@
   GaNaDa
 
   Created by 백대홍 on 2022/10/05.
-  
 */
 
 "Guess the Hangul!" = "当ててみてください";
@@ -14,6 +13,15 @@
 "Score: %lld" = "てんすう: %lld";
 "Your final Score: %lld" = "最終スコア: %lld";
 "Score: %lld" = "てんすう: %lld";
+"Get Start" = "スタート";
+
+//onboarding
+"How well do you know Korean?" = "韓国語はどのくらい知っていますか？";
+"Until now, it was not easy to learn Korean. But what about with GaNaDa?" = "今まで韓国語を学ぶことは簡単ではありませんでした。 でもGaNaDaはどうでしょう？";
+"learnig" = "学究する";
+"Learn a variety of Korean through a simple game" = "簡単なゲームで様々な韓国語を学ぶ";
+"Learning by Repetition" = "反復による学習";
+"After completing the study, write it down in a notepad, and repeat the study!" = "勉強を終えたら、メモ帳に書いて勉強を繰り返します！";
 
 //scoetitle
 "Confirm" = "確認";
@@ -40,5 +48,13 @@
 "Good night" = "おやすみ";
 "where are you from?" = "出身はどちらですか？";
 "See you tomorrow" = "また明日ね";
+
+
+
 "Main" = "メイン画面";
 "vocabulary" = "単語帳";
+
+
+//asset파일은 현지화랑 상관없음.
+
+//어디로 가야하는지 길을 잃었다.

@@ -42,6 +42,7 @@ struct MainView: View {
     @State var selectedTitle = "Main"
     @State var showSide = false
     @State private var words = ["Hello","Thank You","Happy birthday","It's delicious","i like you","It's ok","Do you have time tomorrow","How are you?","What are you doing","I'm happy","Happy new year","Good night","where are you from?","See you tomorrow"].shuffled()
+
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var tappedBox = ""
     
@@ -94,7 +95,7 @@ struct MainView: View {
                         
                         
                         
-                        Text(translated_word[correctAnswer])
+                        Text(words[correctAnswer])
                         
                             .font(.largeTitle.weight(.semibold))
                     }
@@ -105,7 +106,7 @@ struct MainView: View {
                         
                         Button {
                             
-                            flagTapped(number)
+                            Buttonapped(number)
                             
                         } label: {
                             Image(words[number])
@@ -178,7 +179,7 @@ struct MainView: View {
         
     }
     
-    func flagTapped(_ number:Int) {
+    func Buttonapped(_ number:Int) {
         
         tappedBox = words[number]
         
@@ -202,7 +203,7 @@ struct MainView: View {
             
             scoreTitle = isLastRound ? NSLocalizedString("Game Over",comment: "") : NSLocalizedString("wrong answer",comment: "")
             
-            scoreMessage = String(localized: "The answer you choose mean \(translated_word[number]) in Korean.Please review it again in the notepad",comment: "")
+            scoreMessage = String(localized: "The answer you choose mean \(words[number]) in Korean.Please review it again in the notepad",comment: "")
             
         }
         
@@ -235,3 +236,6 @@ struct MainView: View {
     
     
 }
+
+
+//추가할것? 한국어에 대한 현지어는?애초에 필요없고,
