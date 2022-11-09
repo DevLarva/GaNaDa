@@ -4,6 +4,7 @@
 
   Created by 백대홍 on 2022/10/05.
 */
+//description
 
 "Guess the Hangul!" = "当ててみてください";
 "SideView" = "側面図";
@@ -30,8 +31,7 @@
 "wrong answer" = "間違った答え";
 
 //scoreMessage
-
-"The answer you choose mean %@ in Korean.Please review it again in the notepad" = "皆さんが選んだ答えは韓国語です。%@ メモ帳でもう一度確認してください";
+"The answer you choose mean %@ in Korean." = "皆さんが選んだ答えは韓国語です。%@ メモ帳でもう一度確認してください";
 
 //translated_word
 "Hello" = "おはようございます";

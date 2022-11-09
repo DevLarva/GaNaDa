@@ -203,7 +203,7 @@ struct MainView: View {
             
             scoreTitle = isLastRound ? NSLocalizedString("Game Over",comment: "") : NSLocalizedString("wrong answer",comment: "")
             
-            scoreMessage = String(localized: "The answer you choose mean \(words[number]) in Korean.Please review it again in the notepad",comment: "")
+            scoreMessage = String(localized: "The answer you choose mean \(words[number]) in Korean.",comment: "")
             
         }
         
