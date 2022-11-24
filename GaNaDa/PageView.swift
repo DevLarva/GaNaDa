@@ -18,7 +18,6 @@ struct PageView: View {
     var body: some View {
         VStack(spacing: 20) {
             VStack {
-                
                 Image(imageName)
                     .resizable()
                     .scaledToFit()
@@ -40,15 +39,19 @@ struct PageView: View {
                     .shadow(color: Color.black.opacity(0.1), radius: 1, x: 2, y: 2)
                 
             }
+            
             if showsDismissButton {
+                // 온보딩이 끝나고 메인 페이지로 넘어가기 위한 버튼
+                // AppStorage의 isFirstLaunching 값을 false로 바꾸기 때문에, 다음번에 앱을 실행할 때는 OnboardingTabView를 띄우지 않음.
                 Button(action: {
                     shouldShowOnboarding.toggle()
                 }, label: {
                     Text("Get Start")
                         .bold()
+                        .cornerRadius(6)
                         .frame(width: 200, height: 50)
                         .background(Color.yellow)
-                        .cornerRadius(6)
+                        
                     
                 })
             }

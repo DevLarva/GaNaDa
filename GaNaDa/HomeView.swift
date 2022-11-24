@@ -33,8 +33,8 @@ struct MainView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
     @State private var scoreMessage = ""
-    @AppStorage("_isFirstLaunching") var isFirstLaunching: Bool = true
-    @State var shouldShowOnboarding: Bool = true
+    @AppStorage("_Firstrun") var Firstrun: Bool = true
+    @State var ShowOnboarding: Bool = true
     @State private var score = 0
     @State private var gameCount = 0
     @State private var alertAction = ""
@@ -124,8 +124,8 @@ struct MainView: View {
                         
                         
                     }
-                    .fullScreenCover(isPresented: $isFirstLaunching) {
-                        OnboardingView(shouldShowOnboarding: $isFirstLaunching)
+                    .fullScreenCover(isPresented: $Firstrun) {
+                        OnboardingView(ShowOnboarding: $Firstrun)
                     }
                     
                 }

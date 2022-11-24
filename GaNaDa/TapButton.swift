@@ -16,8 +16,7 @@ struct TapButton: View {
     
     var body: some View {
         Button(action: {
-            //선택된 타이틀은 selectedTab 값이 된다
-            //namespace 애니메이션을 넣기 위해서 애니메이션이 있어야한다.
+    
             withAnimation(.spring()) {
                 selectedTitle = title
             }

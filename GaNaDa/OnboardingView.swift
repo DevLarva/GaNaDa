@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    @Binding var shouldShowOnboarding: Bool
+    @Binding var ShowOnboarding: Bool
     var body: some View {
         
         TabView {
@@ -16,7 +16,7 @@ struct OnboardingView: View {
                      subtitle: String(localized: "Until now, it was not easy to learn Korean. But what about with GaNaDa?",comment: ""),
                      imageName: "king",
                      showsDismissButton: false,
-                     shouldShowOnboarding: $shouldShowOnboarding
+                     shouldShowOnboarding: $ShowOnboarding
             )
             
             PageView(title: String(localized:"learnig",comment: ""),
@@ -24,7 +24,7 @@ struct OnboardingView: View {
                      imageName: "student",
                      
                      showsDismissButton: false,
-                     shouldShowOnboarding: $shouldShowOnboarding
+                     shouldShowOnboarding: $ShowOnboarding
                      
             )
             
@@ -33,7 +33,7 @@ struct OnboardingView: View {
                      subtitle:  String(localized:"After completing the study, write it down in a notepad, and repeat the study!",comment: ""),
                      imageName: "student",
                      showsDismissButton: true,
-                     shouldShowOnboarding: $shouldShowOnboarding
+                     shouldShowOnboarding: $ShowOnboarding
                      
             )
             

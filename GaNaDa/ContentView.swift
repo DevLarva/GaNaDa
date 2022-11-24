@@ -11,7 +11,7 @@ struct ContentView: View {
     //Sliding을 위한 변수
     @State var translation: CGSize = .zero
     @State var offsetX: CGFloat = -120
-    
+
 
     //TabView를 사용하면(스크롤 미사용시) 보이지 않는 페이지버튼이 하단에 TabBar로 생성된다. 이것을 제거하는 초기화 코드
     init() {
