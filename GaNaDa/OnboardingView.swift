@@ -16,15 +16,15 @@ struct OnboardingView: View {
                      subtitle: String(localized: "Until now, it was not easy to learn Korean. But what about with GaNaDa?",comment: ""),
                      imageName: "king",
                      showsDismissButton: false,
-                     shouldShowOnboarding: $ShowOnboarding
+                     ShowOnboarding: $ShowOnboarding
             )
             
             PageView(title: String(localized:"learnig",comment: ""),
                      subtitle: String(localized:"Learn a variety of Korean through a simple game",comment: ""),
-                     imageName: "student",
+                     imageName: "south-korea",
                      
                      showsDismissButton: false,
-                     shouldShowOnboarding: $ShowOnboarding
+                     ShowOnboarding: $ShowOnboarding
                      
             )
             
@@ -32,8 +32,9 @@ struct OnboardingView: View {
             PageView(title: String(localized:"Learning by Repetition",comment: ""),
                      subtitle:  String(localized:"After completing the study, write it down in a notepad, and repeat the study!",comment: ""),
                      imageName: "student",
+                     
                      showsDismissButton: true,
-                     shouldShowOnboarding: $ShowOnboarding
+                     ShowOnboarding: $ShowOnboarding
                      
             )
             

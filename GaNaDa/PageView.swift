@@ -12,7 +12,7 @@ struct PageView: View {
     let subtitle: String
     let imageName: String
     let showsDismissButton: Bool
-    @Binding var shouldShowOnboarding: Bool
+    @Binding var ShowOnboarding: Bool
     @State private var isAnimating: Bool = false
     
     var body: some View {
@@ -35,24 +35,25 @@ struct PageView: View {
                     .font(.headline)
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: 250)
-                    .foregroundColor(Color(red: 237 / 255, green: 203 / 255, blue: 150 / 255))
+                    .foregroundColor(Color(red: 255 / 255, green: 140 / 255, blue: 0 / 255))
                     .shadow(color: Color.black.opacity(0.1), radius: 1, x: 2, y: 2)
                 
             }
             
             if showsDismissButton {
                 // 온보딩이 끝나고 메인 페이지로 넘어가기 위한 버튼
-                // AppStorage의 isFirstLaunching 값을 false로 바꾸기 때문에, 다음번에 앱을 실행할 때는 OnboardingTabView를 띄우지 않음.
+                // ShowOnboarding 값을 false로 바꾸기 때문에 최초 실행 이후에는 onboardingview를 보여주지 않는다.
                 Button(action: {
-                    shouldShowOnboarding.toggle()
+                    ShowOnboarding.toggle()
                 }, label: {
                     Text("Get Start")
+                        .foregroundColor(.white)
                         .bold()
-                        .cornerRadius(6)
+                        .cornerRadius(20)
                         .frame(width: 200, height: 50)
-                        .background(Color.yellow)
-                        
+                        .background(Color(red: 60 / 255, green: 179 / 255, blue: 113 / 255))
                     
+                  
                 })
             }
                
