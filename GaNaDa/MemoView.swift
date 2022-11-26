@@ -13,15 +13,17 @@ struct MemoView: View {
         let id = UUID()
         var content: String
         var checked: Bool
+        
     }
     
     @State var MemoString = ""
     @State private var MemoLists = [MemoList]()
-    
     var body: some View {
         ZStack {
             VStack(spacing: 30) {
+                
                 Spacer()
+                
                 Text("what did you study today?")
                     .font(.title.bold())
                 
