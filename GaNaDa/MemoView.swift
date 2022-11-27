@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import CoreData
 
 struct MemoView: View {
     struct MemoList: Identifiable {
@@ -18,6 +18,7 @@ struct MemoView: View {
     
     @State var MemoString = ""
     @State private var MemoLists = [MemoList]()
+    
     var body: some View {
         ZStack {
             VStack(spacing: 30) {
@@ -36,6 +37,7 @@ struct MemoView: View {
                             appendList()
                         }
                     )
+                    
                 }
                 .textFieldStyle(.plain)
                 .frame(width: 300, height: 50, alignment: .center)
@@ -72,8 +74,9 @@ struct MemoView: View {
             }
         }
         .padding()
+
     }
-    
+
     func appendList() {
         let inputList = MemoList(content: MemoString, checked: false)
         MemoLists.append(inputList)

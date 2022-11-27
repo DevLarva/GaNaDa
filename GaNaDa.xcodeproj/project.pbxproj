@@ -79,13 +79,9 @@
 			children = (
 				AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */,
 				AC86F3C528DEDDB600F5EF90 /* ContentView.swift */,
-				AC3CB56828EB0357009B93EF /* OnboardingView.swift */,
-				AC35F05828EC3C1A000B4B56 /* TapButton.swift */,
-				AC35F05C28EC3CAA000B4B56 /* CustomCorners.swift */,
-				AC3CB56A28EB0374009B93EF /* PageView.swift */,
-				AC35F05228EC3AD1000B4B56 /* SideView.swift */,
-				AC35F05628EC3BBC000B4B56 /* SlidingMenuNTabViewApp.swift */,
+				ACFBEE6729334981007B60F6 /* Sidebar */,
 				AC35F06028EC3D95000B4B56 /* HomeView.swift */,
+				ACFBEE6629334961007B60F6 /* Onboarding */,
 				ACF1CA6728F6A91700BDCC07 /* MemoView.swift */,
 				AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */,
 				AC86F3C928DEDDB600F5EF90 /* Preview Content */,
@@ -99,6 +95,26 @@
 				AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACFBEE6629334961007B60F6 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				AC3CB56828EB0357009B93EF /* OnboardingView.swift */,
+				AC3CB56A28EB0374009B93EF /* PageView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		ACFBEE6729334981007B60F6 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				AC35F05828EC3C1A000B4B56 /* TapButton.swift */,
+				AC35F05628EC3BBC000B4B56 /* SlidingMenuNTabViewApp.swift */,
+				AC35F05C28EC3CAA000B4B56 /* CustomCorners.swift */,
+				AC35F05228EC3AD1000B4B56 /* SideView.swift */,
+			);
+			path = Sidebar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
