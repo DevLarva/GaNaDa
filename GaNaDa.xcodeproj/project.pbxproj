@@ -85,7 +85,7 @@
 		AC86F3C228DEDDB600F5EF90 /* GaNaDa */ = {
 			isa = PBXGroup;
 			children = (
-				ACFBEE6829334A1F007B60F6 /* Others */,
+				ACFBEE6829334A1F007B60F6 /* Main */,
 				ACFBEE6729334981007B60F6 /* Sidebar */,
 				ACFBEE6629334961007B60F6 /* Onboarding */,
 				AC55FB4C293486300080A302 /* WordData.xcdatamodeld */,
@@ -126,7 +126,7 @@
 			path = Sidebar;
 			sourceTree = "<group>";
 		};
-		ACFBEE6829334A1F007B60F6 /* Others */ = {
+		ACFBEE6829334A1F007B60F6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				AC86F3C528DEDDB600F5EF90 /* ContentView.swift */,
@@ -134,7 +134,7 @@
 				AC35F06028EC3D95000B4B56 /* HomeView.swift */,
 				ACF1CA6728F6A91700BDCC07 /* MemoView.swift */,
 			);
-			path = Others;
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
