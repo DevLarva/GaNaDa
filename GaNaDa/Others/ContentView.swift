@@ -4,7 +4,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-   
+    
     //@State는 상위 뷰에 선언하고 하위뷰에서 @Binding, State에 디폴트 값을 설정
     @State var selectedTitle = "Main"
     @State var showSide = false

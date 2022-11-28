@@ -15,20 +15,16 @@
 		AC35F06128EC3D95000B4B56 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC35F06028EC3D95000B4B56 /* HomeView.swift */; };
 		AC3CB56928EB0357009B93EF /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CB56828EB0357009B93EF /* OnboardingView.swift */; };
 		AC3CB56B28EB0374009B93EF /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CB56A28EB0374009B93EF /* PageView.swift */; };
+		AC55FB4E293486300080A302 /* WordData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC55FB4C293486300080A302 /* WordData.xcdatamodeld */; };
+		AC55FB50293486890080A302 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55FB4F293486890080A302 /* DataController.swift */; };
+		AC55FB52293489130080A302 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55FB51293489130080A302 /* Test.swift */; };
+		AC55FB54293490ED0080A302 /* AddWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55FB53293490ED0080A302 /* AddWordView.swift */; };
 		AC86F3C428DEDDB600F5EF90 /* GaNaDaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */; };
 		AC86F3C628DEDDB600F5EF90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86F3C528DEDDB600F5EF90 /* ContentView.swift */; };
 		AC86F3C828DEDDB600F5EF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */; };
 		AC86F3CB28DEDDB600F5EF90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */; };
 		ACB1B51D28F3F72A008AB56E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACB1B51B28F3F72A008AB56E /* InfoPlist.strings */; };
 		ACF1CA6828F6A91700BDCC07 /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1CA6728F6A91700BDCC07 /* MemoView.swift */; };
-		ACFBEE6A29334BAD007B60F6 /* AddWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBEE6929334BAD007B60F6 /* AddWord.swift */; };
-		ACFBEE6C29334D04007B60F6 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBEE6B29334D04007B60F6 /* WordList.swift */; };
-		ACFBEE6E29334D2C007B60F6 /* WordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBEE6D29334D2C007B60F6 /* WordRow.swift */; };
-		ACFBEE7029334E5F007B60F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBEE6F29334E5F007B60F6 /* SceneDelegate.swift */; };
-		ACFBEE7229334E86007B60F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBEE7129334E86007B60F6 /* AppDelegate.swift */; };
-		ACFBEE7829334F66007B60F6 /* WordData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACFBEE7629334F66007B60F6 /* WordData.xcdatamodeld */; };
-		ACFBEE7A293354D1007B60F6 /* WordData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBEE79293354D1007B60F6 /* WordData+CoreDataClass.swift */; };
-		ACFBEE7C2933570D007B60F6 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBEE7B2933570D007B60F6 /* Word.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +40,10 @@
 		AC35F06028EC3D95000B4B56 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AC3CB56828EB0357009B93EF /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		AC3CB56A28EB0374009B93EF /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		AC55FB4D293486300080A302 /* WordData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordData.xcdatamodel; sourceTree = "<group>"; };
+		AC55FB4F293486890080A302 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		AC55FB51293489130080A302 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		AC55FB53293490ED0080A302 /* AddWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordView.swift; sourceTree = "<group>"; };
 		AC86F3C028DEDDB600F5EF90 /* GaNaDa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaNaDa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaNaDaApp.swift; sourceTree = "<group>"; };
 		AC86F3C528DEDDB600F5EF90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,14 +51,6 @@
 		AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACB1B51C28F3F72A008AB56E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ACF1CA6728F6A91700BDCC07 /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
-		ACFBEE6929334BAD007B60F6 /* AddWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWord.swift; sourceTree = "<group>"; };
-		ACFBEE6B29334D04007B60F6 /* WordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
-		ACFBEE6D29334D2C007B60F6 /* WordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordRow.swift; sourceTree = "<group>"; };
-		ACFBEE6F29334E5F007B60F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ACFBEE7129334E86007B60F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACFBEE7729334F66007B60F6 /* WordData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordData.xcdatamodel; sourceTree = "<group>"; };
-		ACFBEE79293354D1007B60F6 /* WordData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		ACFBEE7B2933570D007B60F6 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,18 +85,13 @@
 		AC86F3C228DEDDB600F5EF90 /* GaNaDa */ = {
 			isa = PBXGroup;
 			children = (
-				ACFBEE6929334BAD007B60F6 /* AddWord.swift */,
-				ACFBEE6B29334D04007B60F6 /* WordList.swift */,
-				ACFBEE7129334E86007B60F6 /* AppDelegate.swift */,
-				ACFBEE6F29334E5F007B60F6 /* SceneDelegate.swift */,
-				ACFBEE7B2933570D007B60F6 /* Word.swift */,
-				ACFBEE6D29334D2C007B60F6 /* WordRow.swift */,
-				ACFBEE79293354D1007B60F6 /* WordData+CoreDataClass.swift */,
-				ACFBEE7629334F66007B60F6 /* WordData.xcdatamodeld */,
 				ACFBEE6829334A1F007B60F6 /* Others */,
 				ACFBEE6729334981007B60F6 /* Sidebar */,
 				ACFBEE6629334961007B60F6 /* Onboarding */,
-				AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */,
+				AC55FB4C293486300080A302 /* WordData.xcdatamodeld */,
+				AC55FB53293490ED0080A302 /* AddWordView.swift */,
+				AC55FB4F293486890080A302 /* DataController.swift */,
+				AC55FB51293489130080A302 /* Test.swift */,
 				AC86F3C928DEDDB600F5EF90 /* Preview Content */,
 			);
 			path = GaNaDa;
@@ -113,6 +100,7 @@
 		AC86F3C928DEDDB600F5EF90 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */,
 				AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -227,23 +215,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC3CB56B28EB0374009B93EF /* PageView.swift in Sources */,
-				ACFBEE7029334E5F007B60F6 /* SceneDelegate.swift in Sources */,
 				AC86F3C628DEDDB600F5EF90 /* ContentView.swift in Sources */,
-				ACFBEE7829334F66007B60F6 /* WordData.xcdatamodeld in Sources */,
-				ACFBEE7229334E86007B60F6 /* AppDelegate.swift in Sources */,
-				ACFBEE7A293354D1007B60F6 /* WordData+CoreDataClass.swift in Sources */,
 				AC35F05728EC3BBC000B4B56 /* SlidingMenuNTabViewApp.swift in Sources */,
 				AC35F06128EC3D95000B4B56 /* HomeView.swift in Sources */,
 				AC3CB56928EB0357009B93EF /* OnboardingView.swift in Sources */,
-				ACFBEE6C29334D04007B60F6 /* WordList.swift in Sources */,
 				AC35F05328EC3AD1000B4B56 /* SideView.swift in Sources */,
-				ACFBEE7C2933570D007B60F6 /* Word.swift in Sources */,
+				AC55FB52293489130080A302 /* Test.swift in Sources */,
 				AC86F3C428DEDDB600F5EF90 /* GaNaDaApp.swift in Sources */,
 				AC35F05928EC3C1A000B4B56 /* TapButton.swift in Sources */,
-				ACFBEE6E29334D2C007B60F6 /* WordRow.swift in Sources */,
-				ACFBEE6A29334BAD007B60F6 /* AddWord.swift in Sources */,
 				AC35F05D28EC3CAA000B4B56 /* CustomCorners.swift in Sources */,
 				ACF1CA6828F6A91700BDCC07 /* MemoView.swift in Sources */,
+				AC55FB50293486890080A302 /* DataController.swift in Sources */,
+				AC55FB54293490ED0080A302 /* AddWordView.swift in Sources */,
+				AC55FB4E293486300080A302 /* WordData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,12 +461,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		ACFBEE7629334F66007B60F6 /* WordData.xcdatamodeld */ = {
+		AC55FB4C293486300080A302 /* WordData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				ACFBEE7729334F66007B60F6 /* WordData.xcdatamodel */,
+				AC55FB4D293486300080A302 /* WordData.xcdatamodel */,
 			);
-			currentVersion = ACFBEE7729334F66007B60F6 /* WordData.xcdatamodel */;
+			currentVersion = AC55FB4D293486300080A302 /* WordData.xcdatamodel */;
 			path = WordData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

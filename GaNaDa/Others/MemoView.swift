@@ -42,41 +42,43 @@ struct MemoView: View {
                 .textFieldStyle(.plain)
                 .frame(width: 300, height: 50, alignment: .center)
                 
-                List {
-                    ForEach(0..<MemoLists.count, id: \.self) { i in
-                        HStack {
-                            Button(action: {
-                                toggleCheckedState(i)
-                            },
-                                   label: {
-                                Image(systemName:
-                                        MemoLists[i].checked == true ?
-                                      "checkmark.square" :
-                                        "square")
-                            }
-                            )
-                            Text(MemoLists[i].content)
-                            Spacer()
-                            Button(
-                                action: {
-                                    deleteList(i)
+                NavigationView {
+                    List {
+                        ForEach(0..<MemoLists.count, id: \.self) { i in
+                            HStack {
+                                Button(action: {
+                                    toggleCheckedState(i)
                                 },
-                                label: {
-                                    Image(systemName: "trash")
+                                       label: {
+                                    Image(systemName:
+                                            MemoLists[i].checked == true ?
+                                          "checkmark.square" :
+                                            "square")
                                 }
-                            )
+                                )
+                                Text(MemoLists[i].content)
+                                Spacer()
+                                Button(
+                                    action: {
+                                        deleteList(i)
+                                    },
+                                    label: {
+                                        Image(systemName: "trash")
+                                    }
+                                )
+                                
+                            }
+                            .buttonStyle(BorderlessButtonStyle())
                             
                         }
-                        .buttonStyle(BorderlessButtonStyle())
-                        
                     }
                 }
             }
         }
         .padding()
-
+        
     }
-
+    
     func appendList() {
         let inputList = MemoList(content: MemoString, checked: false)
         MemoLists.append(inputList)
