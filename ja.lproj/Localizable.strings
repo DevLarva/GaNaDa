@@ -11,9 +11,9 @@
 "Choose a word that matches each other" = "お互いに合う言葉を選びなさい";
 "what did you study today?" = "今日は何を勉強しましたか？";
 "Type the word you want"= "ご希望の単語を入力してください";
-"Score: %lld" = "てんすう: %lld";
+"Score: %lld" = "得点する: %lld";
 "Your final Score: %lld" = "最終スコア: %lld";
-"Score: %lld" = "てんすう: %lld";
+"Score: %lld" = "得点する: %lld";
 "Get Start" = "スタート";
 
 //onboarding
