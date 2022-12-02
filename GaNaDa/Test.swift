@@ -14,7 +14,23 @@ struct Test: View {
     @State private var showingAddScreen = false
      
     var body: some View {
-        Text("asdasd")
+        NavigationView {
+            Text("Count: \(datas.count)")
+                .navigationTitle("Vocabulary")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            showingAddScreen.toggle()
+                            
+                        } label: {
+                            Label("Add Word", systemImage: "plus")
+                        }
+                    }
+                }
+                .sheet(isPresented: $showingAddScreen) {
+                    AddWordView()
+                }
+        }
     }
 }
 

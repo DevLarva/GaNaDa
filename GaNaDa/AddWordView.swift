@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddWordView: View {
     @Environment(\.managedObjectContext) var moc
-    
+    @Environment(\.dismiss) var dismiss
     
     @State private var word = ""
     @State private var mean = ""
@@ -24,27 +24,25 @@ struct AddWordView: View {
                     TextField("Type the Word",text: $word)
                     TextField("Type the Meaning",text: $mean)
                 }
-            }
-            Section {
-                Picker("Rate Difficulty", selection: $rate) {
-                    ForEach(1..<6) {
-                        Text(String($0))
+                
+                Section {
+                    RatingView(rate: $rate)
+                } header: {
+                    Text("Rate difficulty")
+                }
+                Section {
+                    Button("Save") {
+                        let newWord = Data(context: moc)
+                        newWord.word = word
+                        newWord.mean = mean
+                        newWord.rate = Int16(rate)
+                        
+                        try? moc.save()
+                        dismiss()
                     }
                 }
-        
-            }
-            Section {
-                Button("Save") {
-                    let newWord = Data(context: moc)
-                    newWord.word = word
-                    newWord.meaning = mean
-                    newWord.difficulty = Int16(rate)
-                    
-                    try? moc.save()
-                    
-                }
-            }
-        }.navigationTitle("Add Word")
+            }.navigationTitle("Add Word")
+        }
     }
         
 }
