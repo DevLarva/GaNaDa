@@ -17,7 +17,7 @@ struct HomeView: View {
             MainView()
                 .tag("Main")
             MemoMain()
-                .tag("V ocabulary")
+                .tag("Vocabulary")
         }
         .frame(width: getRect().width)
     }
