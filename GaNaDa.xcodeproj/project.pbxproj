@@ -26,7 +26,6 @@
 		AC86F3CB28DEDDB600F5EF90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */; };
 		ACB1B51D28F3F72A008AB56E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACB1B51B28F3F72A008AB56E /* InfoPlist.strings */; };
 		ACB8706A293A04A0006A2159 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB87069293A04A0006A2159 /* RatingView.swift */; };
-		ACF1CA6828F6A91700BDCC07 /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1CA6728F6A91700BDCC07 /* MemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +53,6 @@
 		AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACB1B51C28F3F72A008AB56E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ACB87069293A04A0006A2159 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
-		ACF1CA6728F6A91700BDCC07 /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				ACFBEE6829334A1F007B60F6 /* Main */,
-				ACFBEE6729334981007B60F6 /* Sidebar */,
+				AC3DFFCE293AE6580076D97B /* Memo */,
 				ACFBEE6629334961007B60F6 /* Onboarding */,
+				ACFBEE6729334981007B60F6 /* Sidebar */,
 				AC86F3C928DEDDB600F5EF90 /* Preview Content */,
 			);
 			path = GaNaDa;
@@ -145,8 +144,6 @@
 				AC86F3C528DEDDB600F5EF90 /* ContentView.swift */,
 				AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */,
 				AC35F06028EC3D95000B4B56 /* HomeView.swift */,
-				ACF1CA6728F6A91700BDCC07 /* MemoView.swift */,
-				AC3DFFCE293AE6580076D97B /* Memo */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -240,7 +237,6 @@
 				AC86F3C428DEDDB600F5EF90 /* GaNaDaApp.swift in Sources */,
 				AC35F05928EC3C1A000B4B56 /* TapButton.swift in Sources */,
 				AC35F05D28EC3CAA000B4B56 /* CustomCorners.swift in Sources */,
-				ACF1CA6828F6A91700BDCC07 /* MemoView.swift in Sources */,
 				AC55FB50293486890080A302 /* DataController.swift in Sources */,
 				AC55FB54293490ED0080A302 /* AddWordView.swift in Sources */,
 				AC55FB4E293486300080A302 /* WordData.xcdatamodeld in Sources */,
