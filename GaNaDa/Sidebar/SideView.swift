@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct SideView: View {
     @Binding var selectedTitle: String
     //네임스페이스 선언은 상위 뷰에 선언하고 가장 하위 뷰에 var namespace: Namespace.ID

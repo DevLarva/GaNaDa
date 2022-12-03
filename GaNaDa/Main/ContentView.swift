@@ -23,7 +23,7 @@ struct ContentView: View {
         HStack {
             SideView(selectedTitle: $selectedTitle)
             ZStack {
-                HomeView(selectedTitle: $selectedTitle)
+            HomeView(selectedTitle: $selectedTitle)
             }
             //사이드메뉴 버튼
             .overlay(alignment: .topLeading, content: {

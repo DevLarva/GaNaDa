@@ -49,3 +49,6 @@ struct RatingView_Previews: PreviewProvider {
         RatingView(rate: .constant(4))
     }
 }
+
+
+
