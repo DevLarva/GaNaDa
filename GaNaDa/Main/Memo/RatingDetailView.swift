@@ -20,8 +20,10 @@ struct RatingDetailView: View {
             Text("🧐")
         case 4:
             Text("😝")
-        default:
+        case 5:
             Text("🤩")
+        default:
+            Text("❔")
         }
     }
 }

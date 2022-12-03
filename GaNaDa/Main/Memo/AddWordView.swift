@@ -13,7 +13,7 @@ struct AddWordView: View {
     
     @State private var word = ""
     @State private var mean = ""
-    @State private var rate = 3
+    @State private var rate = 0
     let means = ["asdasd","asdasdads"]
     
     

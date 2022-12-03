@@ -18,7 +18,7 @@
 		AC3DFFCD293AD2260076D97B /* RatingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3DFFCC293AD2260076D97B /* RatingDetailView.swift */; };
 		AC55FB4E293486300080A302 /* WordData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC55FB4C293486300080A302 /* WordData.xcdatamodeld */; };
 		AC55FB50293486890080A302 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55FB4F293486890080A302 /* DataController.swift */; };
-		AC55FB52293489130080A302 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55FB51293489130080A302 /* Test.swift */; };
+		AC55FB52293489130080A302 /* MemoMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55FB51293489130080A302 /* MemoMain.swift */; };
 		AC55FB54293490ED0080A302 /* AddWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55FB53293490ED0080A302 /* AddWordView.swift */; };
 		AC86F3C428DEDDB600F5EF90 /* GaNaDaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */; };
 		AC86F3C628DEDDB600F5EF90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86F3C528DEDDB600F5EF90 /* ContentView.swift */; };
@@ -45,7 +45,7 @@
 		AC3DFFCC293AD2260076D97B /* RatingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingDetailView.swift; sourceTree = "<group>"; };
 		AC55FB4D293486300080A302 /* WordData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordData.xcdatamodel; sourceTree = "<group>"; };
 		AC55FB4F293486890080A302 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		AC55FB51293489130080A302 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		AC55FB51293489130080A302 /* MemoMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoMain.swift; sourceTree = "<group>"; };
 		AC55FB53293490ED0080A302 /* AddWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordView.swift; sourceTree = "<group>"; };
 		AC86F3C028DEDDB600F5EF90 /* GaNaDa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaNaDa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaNaDaApp.swift; sourceTree = "<group>"; };
@@ -68,6 +68,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC3DFFCE293AE6580076D97B /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				AC55FB4C293486300080A302 /* WordData.xcdatamodeld */,
+				AC55FB53293490ED0080A302 /* AddWordView.swift */,
+				AC55FB4F293486890080A302 /* DataController.swift */,
+				AC55FB51293489130080A302 /* MemoMain.swift */,
+				AC3DFFCC293AD2260076D97B /* RatingDetailView.swift */,
+				ACB87069293A04A0006A2159 /* RatingView.swift */,
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
 		AC86F3B728DEDDB600F5EF90 = {
 			isa = PBXGroup;
 			children = (
@@ -92,12 +105,6 @@
 				ACFBEE6829334A1F007B60F6 /* Main */,
 				ACFBEE6729334981007B60F6 /* Sidebar */,
 				ACFBEE6629334961007B60F6 /* Onboarding */,
-				AC55FB4C293486300080A302 /* WordData.xcdatamodeld */,
-				AC55FB53293490ED0080A302 /* AddWordView.swift */,
-				AC55FB4F293486890080A302 /* DataController.swift */,
-				AC55FB51293489130080A302 /* Test.swift */,
-				AC3DFFCC293AD2260076D97B /* RatingDetailView.swift */,
-				ACB87069293A04A0006A2159 /* RatingView.swift */,
 				AC86F3C928DEDDB600F5EF90 /* Preview Content */,
 			);
 			path = GaNaDa;
@@ -139,6 +146,7 @@
 				AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */,
 				AC35F06028EC3D95000B4B56 /* HomeView.swift */,
 				ACF1CA6728F6A91700BDCC07 /* MemoView.swift */,
+				AC3DFFCE293AE6580076D97B /* Memo */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -228,7 +236,7 @@
 				AC35F06128EC3D95000B4B56 /* HomeView.swift in Sources */,
 				AC3CB56928EB0357009B93EF /* OnboardingView.swift in Sources */,
 				AC35F05328EC3AD1000B4B56 /* SideView.swift in Sources */,
-				AC55FB52293489130080A302 /* Test.swift in Sources */,
+				AC55FB52293489130080A302 /* MemoMain.swift in Sources */,
 				AC86F3C428DEDDB600F5EF90 /* GaNaDaApp.swift in Sources */,
 				AC35F05928EC3C1A000B4B56 /* TapButton.swift in Sources */,
 				AC35F05D28EC3CAA000B4B56 /* CustomCorners.swift in Sources */,

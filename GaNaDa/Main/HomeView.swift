@@ -16,8 +16,8 @@ struct HomeView: View {
         TabView(selection: $selectedTitle ) {
             MainView()
                 .tag("Main")
-            Test()
-                .tag("vocabulary")
+            MemoMain()
+                .tag("V ocabulary")
         }
         .frame(width: getRect().width)
     }

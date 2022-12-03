@@ -9,10 +9,13 @@ import SwiftUI
 
 
 
-struct Test: View {
+struct MemoMain: View {
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest( sortDescriptors: []) var datas :FetchedResults<Data>
-   
+    @FetchRequest( sortDescriptors: [
+        SortDescriptor(\.word),
+        SortDescriptor(\.mean)
+    ]) var datas :FetchedResults<Data>
+    
     @State private var showingAddScreen = false
     
     var body: some View {
@@ -20,11 +23,15 @@ struct Test: View {
         NavigationView {
             List {
                 ForEach(datas) { Data in
-                    VStack {
-                        Text(Data.word ?? "Unknown word")
-                            .font(.headline)
-                        Text(Data.mean ?? "Unknown word")
-                            .foregroundColor(.secondary)
+                    HStack {
+                        RatingDetailView(rate: Data.rate)
+                            .font(.largeTitle)
+                        VStack {
+                            Text(Data.word ?? "Unknown word")
+                                .font(.headline)
+                            Text(Data.mean ?? "Unknown word")
+                                .foregroundColor(.secondary)
+                        }
                     }
                 }.onDelete(perform: deleteBooks)
             }
@@ -42,27 +49,21 @@ struct Test: View {
             .sheet(isPresented: $showingAddScreen) {
                 AddWordView()
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    EditButton()
-                }
-                
-            }
         }
     }
     func deleteBooks(at offsets: IndexSet) {
-            for offset in offsets {
-                let Data = datas[offset]
-                moc.delete(Data)
-            }
-            
-            try? moc.save()
+        for offset in offsets {
+            let Data = datas[offset]
+            moc.delete(Data)
         }
-}
-    
-    
-    struct Test_Previews: PreviewProvider {
-        static var previews: some View {
-            Test()
-        }
+        
+        try? moc.save()
     }
+}
+
+
+struct MemoMain_Previews: PreviewProvider {
+    static var previews: some View {
+        MemoMain()
+    }
+}
