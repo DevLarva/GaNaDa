@@ -8,14 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AC33757128ED7B530019FA44 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC33757328ED7B530019FA44 /* Localizable.strings */; };
-		AC35F05328EC3AD1000B4B56 /* SideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC35F05228EC3AD1000B4B56 /* SideView.swift */; };
-		AC35F05728EC3BBC000B4B56 /* SlidingMenuNTabViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC35F05628EC3BBC000B4B56 /* SlidingMenuNTabViewApp.swift */; };
-		AC35F05928EC3C1A000B4B56 /* TapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC35F05828EC3C1A000B4B56 /* TapButton.swift */; };
-		AC35F05D28EC3CAA000B4B56 /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC35F05C28EC3CAA000B4B56 /* CustomCorners.swift */; };
-		AC35F06128EC3D95000B4B56 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC35F06028EC3D95000B4B56 /* HomeView.swift */; };
 		AC3CB56928EB0357009B93EF /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CB56828EB0357009B93EF /* OnboardingView.swift */; };
 		AC3CB56B28EB0374009B93EF /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CB56A28EB0374009B93EF /* PageView.swift */; };
 		AC3DFFCD293AD2260076D97B /* RatingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3DFFCC293AD2260076D97B /* RatingDetailView.swift */; };
+		AC4DF305294457C900AEAC92 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DF304294457C900AEAC92 /* MainView.swift */; };
 		AC55FB4E293486300080A302 /* WordData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC55FB4C293486300080A302 /* WordData.xcdatamodeld */; };
 		AC55FB50293486890080A302 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55FB4F293486890080A302 /* DataController.swift */; };
 		AC55FB52293489130080A302 /* MemoMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55FB51293489130080A302 /* MemoMain.swift */; };
@@ -67,14 +63,10 @@
 		AC33757528ED7C6E0019FA44 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AC33757628ED7C750019FA44 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AC33757728ED7C800019FA44 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; usesTabs = 0; };
-		AC35F05228EC3AD1000B4B56 /* SideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideView.swift; sourceTree = "<group>"; };
-		AC35F05628EC3BBC000B4B56 /* SlidingMenuNTabViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingMenuNTabViewApp.swift; sourceTree = "<group>"; };
-		AC35F05828EC3C1A000B4B56 /* TapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapButton.swift; sourceTree = "<group>"; };
-		AC35F05C28EC3CAA000B4B56 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
-		AC35F06028EC3D95000B4B56 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AC3CB56828EB0357009B93EF /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		AC3CB56A28EB0374009B93EF /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		AC3DFFCC293AD2260076D97B /* RatingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingDetailView.swift; sourceTree = "<group>"; };
+		AC4DF304294457C900AEAC92 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AC55FB4D293486300080A302 /* WordData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordData.xcdatamodel; sourceTree = "<group>"; };
 		AC55FB4F293486890080A302 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		AC55FB51293489130080A302 /* MemoMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoMain.swift; sourceTree = "<group>"; };
@@ -157,7 +149,6 @@
 				ACFBEE6829334A1F007B60F6 /* Main */,
 				AC3DFFCE293AE6580076D97B /* Memo */,
 				ACFBEE6629334961007B60F6 /* Onboarding */,
-				ACFBEE6729334981007B60F6 /* Sidebar */,
 				AC86F3C928DEDDB600F5EF90 /* Preview Content */,
 			);
 			path = GaNaDa;
@@ -203,23 +194,12 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		ACFBEE6729334981007B60F6 /* Sidebar */ = {
-			isa = PBXGroup;
-			children = (
-				AC35F05828EC3C1A000B4B56 /* TapButton.swift */,
-				AC35F05628EC3BBC000B4B56 /* SlidingMenuNTabViewApp.swift */,
-				AC35F05C28EC3CAA000B4B56 /* CustomCorners.swift */,
-				AC35F05228EC3AD1000B4B56 /* SideView.swift */,
-			);
-			path = Sidebar;
-			sourceTree = "<group>";
-		};
 		ACFBEE6829334A1F007B60F6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				AC86F3C528DEDDB600F5EF90 /* ContentView.swift */,
 				AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */,
-				AC35F06028EC3D95000B4B56 /* HomeView.swift */,
+				AC4DF304294457C900AEAC92 /* MainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -334,17 +314,13 @@
 			files = (
 				AC3CB56B28EB0374009B93EF /* PageView.swift in Sources */,
 				AC86F3C628DEDDB600F5EF90 /* ContentView.swift in Sources */,
-				AC35F05728EC3BBC000B4B56 /* SlidingMenuNTabViewApp.swift in Sources */,
 				ACB8706A293A04A0006A2159 /* RatingView.swift in Sources */,
 				AC3DFFCD293AD2260076D97B /* RatingDetailView.swift in Sources */,
-				AC35F06128EC3D95000B4B56 /* HomeView.swift in Sources */,
 				AC9709A02940A50B0079FB33 /* GaNaDa_Widget.intentdefinition in Sources */,
 				AC3CB56928EB0357009B93EF /* OnboardingView.swift in Sources */,
-				AC35F05328EC3AD1000B4B56 /* SideView.swift in Sources */,
 				AC55FB52293489130080A302 /* MemoMain.swift in Sources */,
 				AC86F3C428DEDDB600F5EF90 /* GaNaDaApp.swift in Sources */,
-				AC35F05928EC3C1A000B4B56 /* TapButton.swift in Sources */,
-				AC35F05D28EC3CAA000B4B56 /* CustomCorners.swift in Sources */,
+				AC4DF305294457C900AEAC92 /* MainView.swift in Sources */,
 				AC55FB50293486890080A302 /* DataController.swift in Sources */,
 				AC55FB54293490ED0080A302 /* AddWordView.swift in Sources */,
 				AC55FB4E293486300080A302 /* WordData.xcdatamodeld in Sources */,

@@ -36,7 +36,6 @@ struct AddWordView: View {
                         newWord.word = word
                         newWord.mean = mean
                         newWord.rate = Int16(rate)
-                        
                         try? moc.save()
                         dismiss()
                     }
