@@ -11,10 +11,10 @@ import SwiftUI
 
 struct MemoMain: View {
     @Environment(\.managedObjectContext) var moc
-    
     @FetchRequest( sortDescriptors: [
         SortDescriptor(\.word),
-        SortDescriptor(\.mean)
+        SortDescriptor(\.mean),
+        SortDescriptor(\.rate)
     ]) var datas :FetchedResults<Data>
     
     @State private var showingAddScreen = true
@@ -64,6 +64,6 @@ struct MemoMain: View {
 
 struct MemoMain_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MemoMain()
     }
 }

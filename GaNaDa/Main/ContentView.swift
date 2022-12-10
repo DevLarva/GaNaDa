@@ -6,27 +6,30 @@ import SwiftUI
 
 struct ContentView: View {
     private enum Tab: Hashable {
-        case Memo
-        case Main
+        case MainView
+        case MemoMain
     }
     
-    @State private var selectedTab: Tab = .Memo
+    @State private var selectedTab: Tab = .MemoMain
     
     var body: some View {
         TabView(selection: $selectedTab) {
             MainView()
-                .tag(0)
+                .tag(1)
                 .tabItem {
                     Text("Home")
                     Image(systemName: "house.fill")
-                }
+                } 
+            
             MemoMain()
-                .tag(1) 
+                .tag(0)
                 .tabItem {
                     Text("Vocabulary")
                     Image(systemName: "square.and.pencil")
                 }
-        }
+            
+            
+        }.font(.headline)
     }
 }
 
