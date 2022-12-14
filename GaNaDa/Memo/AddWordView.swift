@@ -27,6 +27,7 @@ struct AddWordView: View {
                 
                 Section {
                     RatingView(rate: $rate)
+                    
                 } header: {
                     Text("Rate difficulty")
                 }
