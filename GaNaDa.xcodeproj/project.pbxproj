@@ -20,20 +20,31 @@
 		AC86F3C628DEDDB600F5EF90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86F3C528DEDDB600F5EF90 /* ContentView.swift */; };
 		AC86F3C828DEDDB600F5EF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */; };
 		AC86F3CB28DEDDB600F5EF90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */; };
-		AC9709912940A50A0079FB33 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9709902940A50A0079FB33 /* WidgetKit.framework */; };
-		AC9709932940A50A0079FB33 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9709922940A50A0079FB33 /* SwiftUI.framework */; };
-		AC9709A32940A50B0079FB33 /* GaNaDa_WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AC97098E2940A50A0079FB33 /* GaNaDa_WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ACB1B51D28F3F72A008AB56E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACB1B51B28F3F72A008AB56E /* InfoPlist.strings */; };
 		ACB8706A293A04A0006A2159 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB87069293A04A0006A2159 /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AC9709A12940A50B0079FB33 /* PBXContainerItemProxy */ = {
+		ACBAE3F5294C658A00B87727 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC86F3B828DEDDB600F5EF90 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AC97098D2940A50A0079FB33;
-			remoteInfo = GaNaDa_WidgetExtension;
+			remoteGlobalIDString = AC86F3BF28DEDDB600F5EF90;
+			remoteInfo = GaNaDa;
+		};
+		ACBAE402294C699100B87727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC86F3B828DEDDB600F5EF90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC86F3BF28DEDDB600F5EF90;
+			remoteInfo = GaNaDa;
+		};
+		ACBAE40F294C6A9700B87727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC86F3B828DEDDB600F5EF90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC86F3BF28DEDDB600F5EF90;
+			remoteInfo = GaNaDa;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -44,7 +55,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				AC9709A32940A50B0079FB33 /* GaNaDa_WidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,11 +80,12 @@
 		AC86F3C528DEDDB600F5EF90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AC97098E2940A50A0079FB33 /* GaNaDa_WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GaNaDa_WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC9709902940A50A0079FB33 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		AC9709922940A50A0079FB33 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		ACB1B51C28F3F72A008AB56E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ACB87069293A04A0006A2159 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		ACBAE3EF294C658A00B87727 /* GaNaDaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaNaDaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBAE3FE294C699100B87727 /* GaNaDaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaNaDaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBAE40B294C6A9700B87727 /* GaNaDaTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaNaDaTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +96,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC97098B2940A50A0079FB33 /* Frameworks */ = {
+		ACBAE3EC294C658A00B87727 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC9709932940A50A0079FB33 /* SwiftUI.framework in Frameworks */,
-				AC9709912940A50A0079FB33 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBAE3FB294C699100B87727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBAE408294C6A9700B87727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				AC86F3C028DEDDB600F5EF90 /* GaNaDa.app */,
-				AC97098E2940A50A0079FB33 /* GaNaDa_WidgetExtension.appex */,
+				ACBAE3EF294C658A00B87727 /* GaNaDaUITests.xctest */,
+				ACBAE3FE294C699100B87727 /* GaNaDaTests.xctest */,
+				ACBAE40B294C6A9700B87727 /* GaNaDaTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,7 +178,6 @@
 		AC97098F2940A50A0079FB33 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AC9709902940A50A0079FB33 /* WidgetKit.framework */,
 				AC9709922940A50A0079FB33 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
@@ -193,29 +217,65 @@
 			buildRules = (
 			);
 			dependencies = (
-				AC9709A22940A50B0079FB33 /* PBXTargetDependency */,
 			);
 			name = GaNaDa;
 			productName = GaNaDa;
 			productReference = AC86F3C028DEDDB600F5EF90 /* GaNaDa.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AC97098D2940A50A0079FB33 /* GaNaDa_WidgetExtension */ = {
+		ACBAE3EE294C658A00B87727 /* GaNaDaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC9709A72940A50B0079FB33 /* Build configuration list for PBXNativeTarget "GaNaDa_WidgetExtension" */;
+			buildConfigurationList = ACBAE3F7294C658A00B87727 /* Build configuration list for PBXNativeTarget "GaNaDaUITests" */;
 			buildPhases = (
-				AC97098A2940A50A0079FB33 /* Sources */,
-				AC97098B2940A50A0079FB33 /* Frameworks */,
-				AC97098C2940A50A0079FB33 /* Resources */,
+				ACBAE3EB294C658A00B87727 /* Sources */,
+				ACBAE3EC294C658A00B87727 /* Frameworks */,
+				ACBAE3ED294C658A00B87727 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ACBAE3F6294C658A00B87727 /* PBXTargetDependency */,
 			);
-			name = GaNaDa_WidgetExtension;
-			productName = GaNaDa_WidgetExtension;
-			productReference = AC97098E2940A50A0079FB33 /* GaNaDa_WidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
+			name = GaNaDaUITests;
+			productName = GaNaDaUITests;
+			productReference = ACBAE3EF294C658A00B87727 /* GaNaDaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		ACBAE3FD294C699100B87727 /* GaNaDaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBAE404294C699100B87727 /* Build configuration list for PBXNativeTarget "GaNaDaTests" */;
+			buildPhases = (
+				ACBAE3FA294C699100B87727 /* Sources */,
+				ACBAE3FB294C699100B87727 /* Frameworks */,
+				ACBAE3FC294C699100B87727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBAE403294C699100B87727 /* PBXTargetDependency */,
+			);
+			name = GaNaDaTests;
+			productName = GaNaDaTests;
+			productReference = ACBAE3FE294C699100B87727 /* GaNaDaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACBAE40A294C6A9700B87727 /* GaNaDaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBAE413294C6A9700B87727 /* Build configuration list for PBXNativeTarget "GaNaDaTest" */;
+			buildPhases = (
+				ACBAE407294C6A9700B87727 /* Sources */,
+				ACBAE408294C6A9700B87727 /* Frameworks */,
+				ACBAE409294C6A9700B87727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBAE410294C6A9700B87727 /* PBXTargetDependency */,
+			);
+			name = GaNaDaTest;
+			productName = GaNaDaTest;
+			productReference = ACBAE40B294C6A9700B87727 /* GaNaDaTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -230,8 +290,17 @@
 					AC86F3BF28DEDDB600F5EF90 = {
 						CreatedOnToolsVersion = 14.0;
 					};
-					AC97098D2940A50A0079FB33 = {
+					ACBAE3EE294C658A00B87727 = {
 						CreatedOnToolsVersion = 14.1;
+						TestTargetID = AC86F3BF28DEDDB600F5EF90;
+					};
+					ACBAE3FD294C699100B87727 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = AC86F3BF28DEDDB600F5EF90;
+					};
+					ACBAE40A294C6A9700B87727 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = AC86F3BF28DEDDB600F5EF90;
 					};
 				};
 			};
@@ -254,7 +323,9 @@
 			projectRoot = "";
 			targets = (
 				AC86F3BF28DEDDB600F5EF90 /* GaNaDa */,
-				AC97098D2940A50A0079FB33 /* GaNaDa_WidgetExtension */,
+				ACBAE3EE294C658A00B87727 /* GaNaDaUITests */,
+				ACBAE3FD294C699100B87727 /* GaNaDaTests */,
+				ACBAE40A294C6A9700B87727 /* GaNaDaTest */,
 			);
 		};
 /* End PBXProject section */
@@ -271,7 +342,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC97098C2940A50A0079FB33 /* Resources */ = {
+		ACBAE3ED294C658A00B87727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBAE3FC294C699100B87727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBAE409294C6A9700B87727 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,7 +384,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC97098A2940A50A0079FB33 /* Sources */ = {
+		ACBAE3EB294C658A00B87727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBAE3FA294C699100B87727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBAE407294C6A9700B87727 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -309,10 +408,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AC9709A22940A50B0079FB33 /* PBXTargetDependency */ = {
+		ACBAE3F6294C658A00B87727 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AC97098D2940A50A0079FB33 /* GaNaDa_WidgetExtension */;
-			targetProxy = AC9709A12940A50B0079FB33 /* PBXContainerItemProxy */;
+			target = AC86F3BF28DEDDB600F5EF90 /* GaNaDa */;
+			targetProxy = ACBAE3F5294C658A00B87727 /* PBXContainerItemProxy */;
+		};
+		ACBAE403294C699100B87727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC86F3BF28DEDDB600F5EF90 /* GaNaDa */;
+			targetProxy = ACBAE402294C699100B87727 /* PBXContainerItemProxy */;
+		};
+		ACBAE410294C6A9700B87727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC86F3BF28DEDDB600F5EF90 /* GaNaDa */;
+			targetProxy = ACBAE40F294C6A9700B87727 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -526,59 +635,127 @@
 			};
 			name = Release;
 		};
-		AC9709A52940A50B0079FB33 /* Debug */ = {
+		ACBAE3F8294C658A00B87727 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8N7YRTC92N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GaNaDa_Widget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = GaNaDa_Widget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.GaNaDa.GaNaDa-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.GaNaDaUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GaNaDa;
 			};
 			name = Debug;
 		};
-		AC9709A62940A50B0079FB33 /* Release */ = {
+		ACBAE3F9294C658A00B87727 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8N7YRTC92N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GaNaDa_Widget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = GaNaDa_Widget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.GaNaDa.GaNaDa-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.GaNaDaUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GaNaDa;
+			};
+			name = Release;
+		};
+		ACBAE405294C699100B87727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8N7YRTC92N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.GaNaDaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GaNaDa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GaNaDa";
+			};
+			name = Debug;
+		};
+		ACBAE406294C699100B87727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8N7YRTC92N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.GaNaDaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GaNaDa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GaNaDa";
+			};
+			name = Release;
+		};
+		ACBAE411294C6A9700B87727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8N7YRTC92N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.GaNaDaTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GaNaDa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GaNaDa";
+			};
+			name = Debug;
+		};
+		ACBAE412294C6A9700B87727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8N7YRTC92N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.GaNaDaTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GaNaDa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GaNaDa";
 			};
 			name = Release;
 		};
@@ -603,11 +780,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC9709A72940A50B0079FB33 /* Build configuration list for PBXNativeTarget "GaNaDa_WidgetExtension" */ = {
+		ACBAE3F7294C658A00B87727 /* Build configuration list for PBXNativeTarget "GaNaDaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC9709A52940A50B0079FB33 /* Debug */,
-				AC9709A62940A50B0079FB33 /* Release */,
+				ACBAE3F8294C658A00B87727 /* Debug */,
+				ACBAE3F9294C658A00B87727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBAE404294C699100B87727 /* Build configuration list for PBXNativeTarget "GaNaDaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBAE405294C699100B87727 /* Debug */,
+				ACBAE406294C699100B87727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBAE413294C6A9700B87727 /* Build configuration list for PBXNativeTarget "GaNaDaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBAE411294C6A9700B87727 /* Debug */,
+				ACBAE412294C6A9700B87727 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
