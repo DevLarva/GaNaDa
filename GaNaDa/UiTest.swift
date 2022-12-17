@@ -19,14 +19,21 @@ final class UiTest: XCTestCase {
     }
     
     func test_Vocabulary() {
-                        
-                
         
-                
-
+        let app = XCUIApplication()
+        app.tabBars["탭 막대"].buttons["Vocabulary"].tap()
+        
+        let collectionViewsQuery2 = app.collectionViews
+        let collectionViewsQuery = collectionViewsQuery2
+        collectionViewsQuery/*@START_MENU_TOKEN@*/.textFields["Type the Word"]/*[[".cells.textFields[\"Type the Word\"]",".textFields[\"Type the Word\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        collectionViewsQuery/*@START_MENU_TOKEN@*/.textFields["Type the Word"]/*[[".cells.textFields[\"Type the Word\"]",".textFields[\"Type the Word\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.typeText("asdaasd")  // 단어 입력 텍스트 필드 테스트
+        collectionViewsQuery/*@START_MENU_TOKEN@*/.textFields["Type the Meaning"]/*[[".cells.textFields[\"Type the Meaning\"]",".textFields[\"Type the Meaning\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        collectionViewsQuery/*@START_MENU_TOKEN@*/.textFields["Type the Meaning"]/*[[".cells.textFields[\"Type the Meaning\"]",".textFields[\"Type the Meaning\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.typeText("WW")  // 단어 뜻 입력 텍스트 필드 테스트
+        collectionViewsQuery2.children(matching: .cell).element(boundBy: 3).children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .other).element.children(matching: .image).matching(identifier: "즐겨찾기").element(boundBy: 2).tap()
     
+        collectionViewsQuery/*@START_MENU_TOKEN@*/.buttons["Save"]/*[[".cells.buttons[\"Save\"]",".buttons[\"Save\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap() // 저장 버튼 테스트
         
-                        
+        
     }
 
     override func tearDownWithError() throws {

@@ -17,7 +17,7 @@ struct MainView: View {
     @State private var gameCount = 0
     @State private var alertAction = ""
     var isLastRound: Bool { gameCount == 10 }
-    @State private var words = ["Hello","Thank You","Happy birthday","It's delicious","i like you","It's ok","Do you have time tomorrow","How are you?","What are you doing","I'm happy","Happy new year","Good night","where are you from?","See you tomorrow"].shuffled()
+    @State private var words = ["Hello","Thank You","Happy birthday","It's delicious","i like you","It's ok","Do you have time tomorrow","How are you?","What are you doing","I'm happy","Happy new year","Good night","where are you from?","See you tomorrow"]
     
     
     @State private var correctAnswer = Int.random(in: 0...2)
