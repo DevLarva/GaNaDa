@@ -28,6 +28,50 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AC454049294D4A6D005092ED"
+               BuildableName = "FirstTest.xctest"
+               BlueprintName = "FirstTest"
+               ReferencedContainer = "container:GaNaDa.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ACBAE3EE294C658A00B87727"
+               BuildableName = "GaNaDaUITests.xctest"
+               BlueprintName = "GaNaDaUITests"
+               ReferencedContainer = "container:GaNaDa.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ACBAE40A294C6A9700B87727"
+               BuildableName = "GaNaDaTest.xctest"
+               BlueprintName = "GaNaDaTest"
+               ReferencedContainer = "container:GaNaDa.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ACBAE3FD294C699100B87727"
+               BuildableName = "GaNaDaTests.xctest"
+               BlueprintName = "GaNaDaTests"
+               ReferencedContainer = "container:GaNaDa.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

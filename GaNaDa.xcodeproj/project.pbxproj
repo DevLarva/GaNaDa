@@ -11,6 +11,7 @@
 		AC3CB56928EB0357009B93EF /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CB56828EB0357009B93EF /* OnboardingView.swift */; };
 		AC3CB56B28EB0374009B93EF /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3CB56A28EB0374009B93EF /* PageView.swift */; };
 		AC3DFFCD293AD2260076D97B /* RatingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3DFFCC293AD2260076D97B /* RatingDetailView.swift */; };
+		AC454063294D5724005092ED /* UiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC454062294D5724005092ED /* UiTest.swift */; };
 		AC4DF305294457C900AEAC92 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DF304294457C900AEAC92 /* MainView.swift */; };
 		AC55FB4E293486300080A302 /* WordData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC55FB4C293486300080A302 /* WordData.xcdatamodeld */; };
 		AC55FB50293486890080A302 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55FB4F293486890080A302 /* DataController.swift */; };
@@ -25,6 +26,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AC45404E294D4A6E005092ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC86F3B828DEDDB600F5EF90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC86F3BF28DEDDB600F5EF90;
+			remoteInfo = GaNaDa;
+		};
+		AC45405D294D5188005092ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC86F3B828DEDDB600F5EF90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC86F3BF28DEDDB600F5EF90;
+			remoteInfo = GaNaDa;
+		};
 		ACBAE3F5294C658A00B87727 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC86F3B828DEDDB600F5EF90 /* Project object */;
@@ -70,6 +85,9 @@
 		AC3CB56828EB0357009B93EF /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		AC3CB56A28EB0374009B93EF /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		AC3DFFCC293AD2260076D97B /* RatingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingDetailView.swift; sourceTree = "<group>"; };
+		AC45404A294D4A6D005092ED /* FirstTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC454057294D5188005092ED /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC454062294D5724005092ED /* UiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UiTest.swift; path = GaNaDa/UiTest.swift; sourceTree = "<group>"; };
 		AC4DF304294457C900AEAC92 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AC55FB4D293486300080A302 /* WordData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordData.xcdatamodel; sourceTree = "<group>"; };
 		AC55FB4F293486890080A302 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -89,6 +107,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AC454047294D4A6D005092ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC454054294D5188005092ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC86F3BD28DEDDB600F5EF90 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +168,7 @@
 		AC86F3B728DEDDB600F5EF90 = {
 			isa = PBXGroup;
 			children = (
+				AC454062294D5724005092ED /* UiTest.swift */,
 				ACB1B51B28F3F72A008AB56E /* InfoPlist.strings */,
 				AC33757328ED7B530019FA44 /* Localizable.strings */,
 				AC86F3C228DEDDB600F5EF90 /* GaNaDa */,
@@ -151,6 +184,8 @@
 				ACBAE3EF294C658A00B87727 /* GaNaDaUITests.xctest */,
 				ACBAE3FE294C699100B87727 /* GaNaDaTests.xctest */,
 				ACBAE40B294C6A9700B87727 /* GaNaDaTest.xctest */,
+				AC45404A294D4A6D005092ED /* FirstTest.xctest */,
+				AC454057294D5188005092ED /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +240,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AC454049294D4A6D005092ED /* FirstTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC454052294D4A6E005092ED /* Build configuration list for PBXNativeTarget "FirstTest" */;
+			buildPhases = (
+				AC454046294D4A6D005092ED /* Sources */,
+				AC454047294D4A6D005092ED /* Frameworks */,
+				AC454048294D4A6D005092ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC45404F294D4A6E005092ED /* PBXTargetDependency */,
+			);
+			name = FirstTest;
+			productName = FirstTest;
+			productReference = AC45404A294D4A6D005092ED /* FirstTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC454056294D5188005092ED /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC45405F294D5188005092ED /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				AC454053294D5188005092ED /* Sources */,
+				AC454054294D5188005092ED /* Frameworks */,
+				AC454055294D5188005092ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC45405E294D5188005092ED /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = AC454057294D5188005092ED /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		AC86F3BF28DEDDB600F5EF90 /* GaNaDa */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC86F3CE28DEDDB600F5EF90 /* Build configuration list for PBXNativeTarget "GaNaDa" */;
@@ -287,11 +358,20 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					AC454049294D4A6D005092ED = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = AC86F3BF28DEDDB600F5EF90;
+					};
+					AC454056294D5188005092ED = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = AC86F3BF28DEDDB600F5EF90;
+					};
 					AC86F3BF28DEDDB600F5EF90 = {
 						CreatedOnToolsVersion = 14.0;
 					};
 					ACBAE3EE294C658A00B87727 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 						TestTargetID = AC86F3BF28DEDDB600F5EF90;
 					};
 					ACBAE3FD294C699100B87727 = {
@@ -326,11 +406,27 @@
 				ACBAE3EE294C658A00B87727 /* GaNaDaUITests */,
 				ACBAE3FD294C699100B87727 /* GaNaDaTests */,
 				ACBAE40A294C6A9700B87727 /* GaNaDaTest */,
+				AC454049294D4A6D005092ED /* FirstTest */,
+				AC454056294D5188005092ED /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AC454048294D4A6D005092ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC454055294D5188005092ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC86F3BE28DEDDB600F5EF90 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,6 +462,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AC454046294D4A6D005092ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC454053294D5188005092ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC86F3BC28DEDDB600F5EF90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,6 +498,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC454063294D5724005092ED /* UiTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +519,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AC45404F294D4A6E005092ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC86F3BF28DEDDB600F5EF90 /* GaNaDa */;
+			targetProxy = AC45404E294D4A6E005092ED /* PBXContainerItemProxy */;
+		};
+		AC45405E294D5188005092ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC86F3BF28DEDDB600F5EF90 /* GaNaDa */;
+			targetProxy = AC45405D294D5188005092ED /* PBXContainerItemProxy */;
+		};
 		ACBAE3F6294C658A00B87727 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AC86F3BF28DEDDB600F5EF90 /* GaNaDa */;
@@ -449,6 +570,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AC454050294D4A6E005092ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8N7YRTC92N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.FirstTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GaNaDa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GaNaDa";
+			};
+			name = Debug;
+		};
+		AC454051294D4A6E005092ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8N7YRTC92N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.FirstTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GaNaDa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GaNaDa";
+			};
+			name = Release;
+		};
+		AC454060294D5188005092ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8N7YRTC92N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GaNaDa;
+			};
+			name = Debug;
+		};
+		AC454061294D5188005092ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8N7YRTC92N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GaNaDa;
+			};
+			name = Release;
+		};
 		AC86F3CC28DEDDB600F5EF90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -638,15 +839,22 @@
 		ACBAE3F8294C658A00B87727 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8N7YRTC92N;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.GaNaDaUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = GaNaDa;
@@ -656,11 +864,17 @@
 		ACBAE3F9294C658A00B87727 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8N7YRTC92N;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.GaNaDaUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -762,6 +976,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AC454052294D4A6E005092ED /* Build configuration list for PBXNativeTarget "FirstTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC454050294D4A6E005092ED /* Debug */,
+				AC454051294D4A6E005092ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC45405F294D5188005092ED /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC454060294D5188005092ED /* Debug */,
+				AC454061294D5188005092ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AC86F3BB28DEDDB600F5EF90 /* Build configuration list for PBXProject "GaNaDa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
