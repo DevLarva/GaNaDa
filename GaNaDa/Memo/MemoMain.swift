@@ -33,7 +33,8 @@ struct MemoMain: View {
                                 .foregroundColor(.secondary)
                         }
                     }
-                }.onDelete(perform: deleteBooks)
+                }
+                .onDelete(perform: deleteWords)// 리스트 삭제
             }
             .navigationTitle("Vocabulary")
             .toolbar {
@@ -51,7 +52,7 @@ struct MemoMain: View {
             }
         }
     }
-    func deleteBooks(at offsets: IndexSet) {
+    func deleteWords(at offsets: IndexSet) {
         for offset in offsets {
             let Data = datas[offset]
             moc.delete(Data)

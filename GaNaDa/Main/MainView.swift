@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+
+//MARK: - 메인 게임 실행 부분
+
+
 struct MainView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
@@ -215,7 +219,7 @@ struct MainView: View {
 }
 
 
-//추가할것? 한국어에 대한 현지어는?애초에 필요없고,
+
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
