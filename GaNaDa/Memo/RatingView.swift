@@ -4,7 +4,7 @@
 //
 //  Created by 백대홍 on 2022/12/02.
 //
-
+//MARK: - 평점 선택 VIEW
 import SwiftUI
 
 struct RatingView: View {

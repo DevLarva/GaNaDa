@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-
+//MARK: - 메인 메모 실행 부분
 
 struct MemoMain: View {
     @Environment(\.managedObjectContext) var moc

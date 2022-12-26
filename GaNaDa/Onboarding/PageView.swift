@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//MARK: - 온보딩뷰에 대한 페이지뷰
 struct PageView: View {
     let title: String
     let subtitle: String

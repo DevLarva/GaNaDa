@@ -4,7 +4,7 @@
 //
 //  Created by 백대홍 on 2022/09/28.
 //
-
+//MARK: - onboardingview 
 import SwiftUI
 
 struct OnboardingView: View {

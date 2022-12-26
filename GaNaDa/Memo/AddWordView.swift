@@ -4,7 +4,7 @@
 //
 //  Created by 백대홍 on 2022/11/28.
 //
-
+//MARK: - 단어 추가 페이지
 import SwiftUI
 
 struct AddWordView: View {

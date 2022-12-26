@@ -4,7 +4,7 @@
 //
 //  Created by 백대홍 on 2022/12/03.
 //
-
+//MARK: - 평점 매기는 부분(1 ~ 5 -> 이모티콘으로 switch)
 import SwiftUI
 
 struct RatingDetailView: View {
