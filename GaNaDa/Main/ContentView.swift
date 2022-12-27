@@ -5,22 +5,19 @@ struct ContentView: View {
     @State private var selection = 0
     
     var body: some View {
-        TabView(selection: $selection) {
+        TabView(selection: $selection) {  // tag랑 같이 씀
             MainView()
                 .tag(0)
                 .tabItem {
                     Text("Home")
                     Image(systemName: "house.fill")
                 }
-            
             MemoMain()
                 .tag(1)
                 .tabItem {
                     Text("Vocabulary")
                     Image(systemName: "square.and.pencil")
                 }
-            
-            
         }.font(.headline)
     }
 }

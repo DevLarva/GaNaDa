@@ -52,6 +52,8 @@ struct MemoMain: View {
             }
         }
     }
+    
+    //MARK: - 메모 삭제 함수
     func deleteWords(at offsets: IndexSet) {
         for offset in offsets {
             let Data = datas[offset]
