@@ -17,7 +17,7 @@ struct MemoMain: View {
         SortDescriptor(\.rate)
     ]) var datas :FetchedResults<Data>
     
-    @State private var showingAddScreen = true
+    @State private var showingAddScreen = false
     var body: some View {
         
         NavigationView {
