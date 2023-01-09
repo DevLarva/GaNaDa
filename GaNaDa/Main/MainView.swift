@@ -69,9 +69,8 @@ struct MainView: View {
                         
                         
                         Text("Choose a word that matches each other")
-                        
+                            .accessibilityAddTraits(.isHeader)
                             .foregroundColor(.black)
-                        
                             .font(.subheadline.weight(.heavy))
                         
                         
