@@ -55,7 +55,7 @@ struct MainView: View {
                 
                 
                 Spacer()
-                Text("Guess the Hangul!")
+                Text("Guess the Korean!")
                 
                     .font(.largeTitle.bold())
                 

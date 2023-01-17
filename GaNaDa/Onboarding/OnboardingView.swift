@@ -19,8 +19,8 @@ struct OnboardingView: View {
                      ShowOnboarding: $ShowOnboarding
             )
             
-            PageView(title: String(localized:"learnig",comment: ""),
-                     subtitle: String(localized:"Learn a variety of Korean through a simple game",comment: ""),
+            PageView(title: String(localized:"Learnig",comment: ""),
+                     subtitle: String(localized:"Learning a variety of Korean through a simple game",comment: ""),
                      imageName: "south-korea",
                      
                      showsDismissButton: false,
