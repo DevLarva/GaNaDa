@@ -20,7 +20,7 @@ struct MemoMain: View {
     @State private var showingAddScreen = false
     var body: some View {
         
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(datas) { Data in
                     HStack {

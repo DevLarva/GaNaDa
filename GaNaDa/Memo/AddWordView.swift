@@ -18,7 +18,7 @@ struct AddWordView: View {
     
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Form {
                 Section {
                     TextField("Type the Word",text: $word)
