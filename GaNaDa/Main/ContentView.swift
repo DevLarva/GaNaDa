@@ -18,6 +18,12 @@ struct ContentView: View {
                     Text("Vocabulary")
                     Image(systemName: "square.and.pencil")
                 }
+            SearchView()
+                .tag(2)
+                .tabItem {
+                    Text("Search")
+                    Image(systemName: "magnifyingglass")
+                }
         }.font(.headline)
     }
 }

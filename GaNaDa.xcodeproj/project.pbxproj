@@ -21,6 +21,8 @@
 		AC86F3C628DEDDB600F5EF90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86F3C528DEDDB600F5EF90 /* ContentView.swift */; };
 		AC86F3C828DEDDB600F5EF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */; };
 		AC86F3CB28DEDDB600F5EF90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */; };
+		AC9DD47C298901F80099273C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DD47A298901F10099273C /* SearchView.swift */; };
+		AC9DD47E29890EFC0099273C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DD47D29890EFC0099273C /* WebView.swift */; };
 		ACB1B51D28F3F72A008AB56E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACB1B51B28F3F72A008AB56E /* InfoPlist.strings */; };
 		ACB8706A293A04A0006A2159 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB87069293A04A0006A2159 /* RatingView.swift */; };
 /* End PBXBuildFile section */
@@ -99,6 +101,9 @@
 		AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC9709922940A50A0079FB33 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		AC9DD47A298901F10099273C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		AC9DD47D29890EFC0099273C /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		AC9DD47F298911110099273C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ACB1B51C28F3F72A008AB56E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ACB87069293A04A0006A2159 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		ACBAE3EF294C658A00B87727 /* GaNaDaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaNaDaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +198,7 @@
 		AC86F3C228DEDDB600F5EF90 /* GaNaDa */ = {
 			isa = PBXGroup;
 			children = (
+				AC9DD47F298911110099273C /* Info.plist */,
 				ACFBEE6829334A1F007B60F6 /* Main */,
 				AC3DFFCE293AE6580076D97B /* Memo */,
 				ACFBEE6629334961007B60F6 /* Onboarding */,
@@ -231,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				AC86F3C528DEDDB600F5EF90 /* ContentView.swift */,
+				AC9DD47A298901F10099273C /* SearchView.swift */,
+				AC9DD47D29890EFC0099273C /* WebView.swift */,
 				AC86F3C328DEDDB600F5EF90 /* GaNaDaApp.swift */,
 				AC4DF304294457C900AEAC92 /* MainView.swift */,
 			);
@@ -480,10 +488,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9DD47E29890EFC0099273C /* WebView.swift in Sources */,
 				AC3CB56B28EB0374009B93EF /* PageView.swift in Sources */,
 				AC86F3C628DEDDB600F5EF90 /* ContentView.swift in Sources */,
 				ACB8706A293A04A0006A2159 /* RatingView.swift in Sources */,
 				AC3DFFCD293AD2260076D97B /* RatingDetailView.swift in Sources */,
+				AC9DD47C298901F80099273C /* SearchView.swift in Sources */,
 				AC3CB56928EB0357009B93EF /* OnboardingView.swift in Sources */,
 				AC55FB52293489130080A302 /* MemoMain.swift in Sources */,
 				AC86F3C428DEDDB600F5EF90 /* GaNaDaApp.swift in Sources */,
@@ -778,6 +788,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GaNaDa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -813,6 +824,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GaNaDa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
