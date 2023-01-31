@@ -26,7 +26,7 @@ struct MemoMain: View {
                     HStack {
                         RatingDetailView(rate: Data.rate)
                             .font(.largeTitle)
-                        VStack {
+                        VStack(alignment: .leading) {
                             Text(Data.word ?? "Unknown word")
                                 .font(.headline)
                             Text(Data.mean ?? "Unknown word")
