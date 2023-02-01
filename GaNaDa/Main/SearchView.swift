@@ -18,10 +18,7 @@ struct SearchView: View {
                         .resizable()
                         .frame(width: 400, height: 200)
                         .padding(.vertical)
-                    Text("")
-                        .padding()
-                        .bold()
-                        .font(.title2)
+                 
                     Text("Find additional words you want to know through the link below.")
                         .padding()
                     
