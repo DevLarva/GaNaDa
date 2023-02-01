@@ -13,15 +13,25 @@ struct RatingDetailView: View {
     var body: some View {
         switch rate {
         case 1:
-            Text("🤩")
+            Image("star1")
+                .resizable()
+                .frame(width: 40, height: 40)
         case 2:
-            Text("😊")
+            Image("star2")
+                .resizable()
+                .frame(width: 40, height: 40)
         case 3:
-            Text("🧐")
+            Image("star3")
+                .resizable()
+                .frame(width: 40, height: 40)
         case 4:
-            Text("🥵")
+            Image("star4")
+                .resizable()
+                .frame(width: 40, height: 40)
         case 5:
-            Text("😱")
+            Image("star5")
+                .resizable()
+                .frame(width: 38, height: 38)
         default:
             Text("❔")
         }
@@ -30,6 +40,6 @@ struct RatingDetailView: View {
 
 struct RatingDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        RatingDetailView(rate: 3)
+        RatingDetailView(rate: 1)
     }
 }

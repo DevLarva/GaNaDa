@@ -23,10 +23,13 @@ struct MemoMain: View {
         NavigationStack {
             List {
                 ForEach(datas) { Data in
-                    HStack {
+                    HStack(alignment: .center, spacing: 10) {
                         RatingDetailView(rate: Data.rate)
-                            .font(.largeTitle)
+                            .font(.title)
+                            
+                            
                         VStack(alignment: .leading) {
+                            
                             Text(Data.word ?? "Unknown word")
                                 .font(.headline)
                             Text(Data.mean ?? "Unknown word")
