@@ -1,7 +1,14 @@
 # GaNaDa
 
 ### 한글 학습 앱 가나다
-## 
+### **📜 Summary**
+- 한글을 배우고 싶어하는 외국인을 위한 한글 학습 App
+
+### ⚙️ 개발 환경
+- 개발 및 협업 도구 : Xcode, Github
+- 개발 언어 : SwiftUI
+
+
 
 ### Preview 
 
