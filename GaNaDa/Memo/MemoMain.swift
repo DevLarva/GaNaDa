@@ -29,11 +29,14 @@ struct MemoMain: View {
                             
                             
                         VStack(alignment: .leading) {
-                            
-                            Text(Data.word ?? "Unknown word")
-                                .font(.headline)
-                            Text(Data.mean ?? "Unknown word")
-                                .foregroundColor(.secondary)
+                            NavigationLink {
+                               MemoDetailView()
+                            } label: {
+                                Text(Data.word ?? "Unknown word")
+                                    .font(.headline)
+                                Text(Data.mean ?? "Unknown word")
+                                    .foregroundColor(.secondary)
+                            }
                         }
                     }
                 }

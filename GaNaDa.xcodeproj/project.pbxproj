@@ -21,6 +21,7 @@
 		AC86F3C628DEDDB600F5EF90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86F3C528DEDDB600F5EF90 /* ContentView.swift */; };
 		AC86F3C828DEDDB600F5EF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */; };
 		AC86F3CB28DEDDB600F5EF90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */; };
+		AC94A6EF298BDE1A00FD7645 /* MemoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC94A6EE298BDE1A00FD7645 /* MemoDetailView.swift */; };
 		AC9DD47C298901F80099273C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DD47A298901F10099273C /* SearchView.swift */; };
 		AC9DD47E29890EFC0099273C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DD47D29890EFC0099273C /* WebView.swift */; };
 		ACB1B51D28F3F72A008AB56E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACB1B51B28F3F72A008AB56E /* InfoPlist.strings */; };
@@ -100,6 +101,7 @@
 		AC86F3C528DEDDB600F5EF90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC86F3C728DEDDB600F5EF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC86F3CA28DEDDB600F5EF90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC94A6EE298BDE1A00FD7645 /* MemoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailView.swift; sourceTree = "<group>"; };
 		AC9709922940A50A0079FB33 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		AC9DD47A298901F10099273C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		AC9DD47D29890EFC0099273C /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				AC55FB53293490ED0080A302 /* AddWordView.swift */,
 				AC55FB4F293486890080A302 /* DataController.swift */,
 				AC55FB51293489130080A302 /* MemoMain.swift */,
+				AC94A6EE298BDE1A00FD7645 /* MemoDetailView.swift */,
 				AC3DFFCC293AD2260076D97B /* RatingDetailView.swift */,
 				ACB87069293A04A0006A2159 /* RatingView.swift */,
 			);
@@ -495,6 +498,7 @@
 				AC3DFFCD293AD2260076D97B /* RatingDetailView.swift in Sources */,
 				AC9DD47C298901F80099273C /* SearchView.swift in Sources */,
 				AC3CB56928EB0357009B93EF /* OnboardingView.swift in Sources */,
+				AC94A6EF298BDE1A00FD7645 /* MemoDetailView.swift in Sources */,
 				AC55FB52293489130080A302 /* MemoMain.swift in Sources */,
 				AC86F3C428DEDDB600F5EF90 /* GaNaDaApp.swift in Sources */,
 				AC4DF305294457C900AEAC92 /* MainView.swift in Sources */,
