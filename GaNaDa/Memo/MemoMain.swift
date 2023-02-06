@@ -16,32 +16,32 @@ struct MemoMain: View {
         SortDescriptor(\.mean),
         SortDescriptor(\.rate)
     ]) var datas :FetchedResults<Data>
-    
+    let sections = [(title: "1 ~ 2 stars", range: 1...2), (title: "3 ~ 4 stars", range: 3...4),(title: "5 stars", range: 5...5)]
     @State private var showingAddScreen = false
     var body: some View {
         
         NavigationStack {
-            List {
-                ForEach(datas) { Data in
-                    HStack(alignment: .center, spacing: 10) {
-                        RatingDetailView(rate: Data.rate)
-                            .font(.title)
-                            
-                            
-                        VStack(alignment: .leading) {
-                            NavigationLink {
-                               MemoDetailView()
-                            } label: {
-                                Text(Data.word ?? "Unknown word")
-                                    .font(.headline)
-                                Text(Data.mean ?? "Unknown word")
-                                    .foregroundColor(.secondary)
+                List {
+                    ForEach(sections, id: \.title) { section in
+                        Section(header: Text(section.title)) {
+                            ForEach(datas.filter { $0.rate >= section.range.lowerBound && $0.rate <= section.range.upperBound }) { Data in
+                                HStack(alignment: .center, spacing: 10) {
+                                    RatingDetailView(rate: Data.rate)
+                                        .font(.title)
+                                    VStack(alignment: .leading) {
+                                        Text(Data.word ?? "Unknown word")
+                                            .font(.headline)
+                                        Text(Data.mean ?? "Unknown word")
+                                            .foregroundColor(.secondary)
+                                        
+                                    }
+                                }
                             }
+                            .onDelete(perform: deleteWords)// 리스트 삭제
                         }
                     }
                 }
-                .onDelete(perform: deleteWords)// 리스트 삭제
-            }
+            
             .navigationTitle("Vocabulary")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
