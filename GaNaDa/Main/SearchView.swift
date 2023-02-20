@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SearchView: View {
-    @State private var searchText = ""
-    @State private var isEditing = false
+    
+    
     var body: some View {
         NavigationStack {
             ScrollView {
