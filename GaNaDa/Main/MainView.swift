@@ -56,38 +56,23 @@ struct MainView: View {
                 
                 Spacer()
                 Text("Guess the Korean!")
-                
                     .font(.largeTitle.bold())
-                
                     .foregroundColor(.black)
                 
                 VStack(spacing:40) {
-                    
-                    
                     VStack {
-                        
-                        
-                        
                         Text("Choose a word that matches each other")
                             .accessibilityAddTraits(.isHeader)
                             .foregroundColor(.black)
                             .font(.subheadline.weight(.heavy))
                         
-                        
-                        
                         Text(words[correctAnswer])
-                        
                             .font(.largeTitle.weight(.semibold))
                     }
                     
-                    
-                    
                     ForEach(0..<3) { number in
-                        
                         Button {
-                            
                             Buttonapped(number)
-                            
                         } label: {
                             Image(words[number])
                                 .resizable()
@@ -98,99 +83,68 @@ struct MainView: View {
                                 .opacity(showingScore && tappedBox != words[number] ? 0.25 : 1)
                                 .animation(.spring(), value: gameCount)
                                 .accessibilityLabel(description[words[number], default: "Unknown Box."])
-                            
-                            
                         }
-                        
-                        
                     }
+                    // MARK: - 온보딩 fullScreenCover
                     .fullScreenCover(isPresented: $Firstrun) {
                         OnboardingView(ShowOnboarding: $Firstrun)
                     }
-                    
                 }
                 .frame(maxWidth: .infinity)
-                
                 .padding(.vertical, 20)
-                
                 .background(Color(red: 244 / 255, green: 206 / 255, blue: 113 / 255))
-                
                 .clipShape(RoundedRectangle(cornerRadius: 20))
-                
                 Spacer()
-                
-                
-                
+
                 Text("Score: \(score)")
-                
                     .foregroundColor(.black)
-                
                     .font(.title.bold())
-                
                 Spacer()
-                
-                
-                
-                
-                
             }
-            
             .padding()
-            
-            
-            
         }
-        
         .alert(scoreTitle,isPresented:  $showingScore) {
-            
+
             Button(alertAction) {
-                
+
                 askQuestion()
-                
             }
-            
-            
-            
+
         } message: {
-            
+
             Text(scoreMessage)
-            
         }
-        
     }
     
+    
+
+
     func Buttonapped(_ number:Int) {
-        
+
         tappedBox = words[number]
-        
+
         showingScore = true
-        
+
         gameCount += 1
-        
-        
-        
+
         if number == correctAnswer {
-            
+
             score += 10
-            
-            
-            scoreTitle  = isLastRound ? NSLocalizedString("Game Over",comment: "") : NSLocalizedString("Correct!",comment: "")
-            
-            scoreMessage = isLastRound ? String(localized: "Your final Score: \(score)",comment:"") : String(localized:"Score: \(score)",comment: "")
-            
-            
-        } else {
-            
-            scoreTitle = isLastRound ? NSLocalizedString("Game Over",comment: "") : NSLocalizedString("wrong answer",comment: "")
-            
-            scoreMessage = String(localized: "The answer you choose mean \(words[number]) in Korean.",comment: "")
-            
+
+            scoreTitle  = isLastRound ? "Game Over" : "Correct!"
+
+            scoreMessage = isLastRound ?  "Your final Score: \(score)" : "Score: \(score)"
+
+       } else {
+
+            scoreTitle = isLastRound ? "Game Over" : "wrong answer"
+
+            scoreMessage =  "The answer you choose mean \(words[number]) in Korean."
+
         }
-        
-        
-        
-        alertAction = isLastRound ? NSLocalizedString("Restart",comment: "") : NSLocalizedString("Confirm",comment: "")
-        
+
+        alertAction = isLastRound ? "Restart" : "Confirm"
+
     }
     
     
