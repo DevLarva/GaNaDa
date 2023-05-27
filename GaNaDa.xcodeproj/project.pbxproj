@@ -26,6 +26,7 @@
 		AC9DD47E29890EFC0099273C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DD47D29890EFC0099273C /* WebView.swift */; };
 		ACB1B51D28F3F72A008AB56E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACB1B51B28F3F72A008AB56E /* InfoPlist.strings */; };
 		ACB8706A293A04A0006A2159 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB87069293A04A0006A2159 /* RatingView.swift */; };
+		ACC59A4E29CB009B00A75EA6 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = ACC59A4D29CB009B00A75EA6 /* Documentation.docc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		ACBAE3EF294C658A00B87727 /* GaNaDaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaNaDaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBAE3FE294C699100B87727 /* GaNaDaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaNaDaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBAE40B294C6A9700B87727 /* GaNaDaTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaNaDaTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC59A4D29CB009B00A75EA6 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				AC3DFFCE293AE6580076D97B /* Memo */,
 				ACFBEE6629334961007B60F6 /* Onboarding */,
 				AC86F3C928DEDDB600F5EF90 /* Preview Content */,
+				ACC59A4D29CB009B00A75EA6 /* Documentation.docc */,
 			);
 			path = GaNaDa;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				AC4DF305294457C900AEAC92 /* MainView.swift in Sources */,
 				AC55FB50293486890080A302 /* DataController.swift in Sources */,
 				AC55FB54293490ED0080A302 /* AddWordView.swift in Sources */,
+				ACC59A4E29CB009B00A75EA6 /* Documentation.docc in Sources */,
 				AC55FB4E293486300080A302 /* WordData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
