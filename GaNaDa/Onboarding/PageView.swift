@@ -20,7 +20,7 @@ struct PageView: View {
                 
             
             VStack(alignment: .center) {
-                Text("NETFULIX")          //제일 위 제목
+                Text("GaNaDa")          //제일 위 제목
                     .font(.largeTitle.bold())
                     .foregroundColor(.red)
                     .padding(.top, 20)

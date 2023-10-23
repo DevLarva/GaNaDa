@@ -23,7 +23,8 @@ struct MainView: View {
     var isLastRound: Bool { gameCount == 10 }
     @State private var words = ["Hello","Thank You","Happy birthday","It's delicious","i like you","It's ok","Do you have time tomorrow","How are you?","What are you doing","I'm happy","Happy new year","Good night","where are you from?","See you tomorrow"]
     
-    
+    @State private var isShowingResult = false
+    @State private var resultMessage = ""
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var tappedBox = ""
     //MARK: - 현지화 작업
@@ -74,15 +75,29 @@ struct MainView: View {
                         Button {
                             Buttonapped(number)
                         } label: {
-                            Image(words[number])
-                                .resizable()
-                                .frame(width: 200.0, height: 100.0)
-                                .clipShape(RoundedRectangle(cornerRadius: 20))
-                                .shadow(radius: 5)
-                                .rotation3DEffect(.degrees(showingScore && tappedBox == words[number] ? 360 : 0), axis: (x: 0, y: 1, z: 0))
-                                .opacity(showingScore && tappedBox != words[number] ? 0.25 : 1)
-                                .animation(.spring(), value: gameCount)
-                                .accessibilityLabel(description[words[number], default: "Unknown Box."])
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 20)
+                                    .frame(width: 200.0, height: 100.0)
+                                    .foregroundColor(.white)
+                                    .shadow(radius: 5)
+                                
+                                if showingScore && tappedBox != words[number] {
+                                    Text(description[words[number], default: "Unknown Box."])
+                                        .foregroundColor(.black)
+                                } else if showingScore && tappedBox == words[number] {
+                                    Text(description[words[number], default: "Unknown Box."])
+                                        .foregroundColor(.black)
+                                        .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+                                } else {
+                                    Image(words[number])
+                                        .resizable()
+                                        .frame(width: 200.0, height: 100.0)
+                                }
+                            }
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                            .opacity(showingScore && tappedBox != words[number] ? 0.25 : 1)
+                            .animation(.spring(), value: gameCount)
+                            .accessibilityLabel(description[words[number], default: "Unknown Box."])
                         }
                     }
                     // MARK: - 온보딩 fullScreenCover
@@ -95,7 +110,7 @@ struct MainView: View {
                 .background(Color(red: 244 / 255, green: 206 / 255, blue: 113 / 255))
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 Spacer()
-
+                
                 Text("Score: \(score)")
                     .foregroundColor(.black)
                     .font(.title.bold())
@@ -103,49 +118,43 @@ struct MainView: View {
             }
             .padding()
         }
-        .alert(scoreTitle,isPresented:  $showingScore) {
-
-            Button(alertAction) {
-
-                askQuestion()
-            }
-
-        } message: {
-
-            Text(scoreMessage)
-        }
+        // .alert(scoreTitle,isPresented:  $showingScore) {
+        //
+        //            Button(alertAction) {
+        //
+        //                askQuestion()
+        //            }
+        //
+        //        } message: {
+        //
+        //            Text(scoreMessage)
+        //        }
     }
     
     
-
-
+    
+    
     func Buttonapped(_ number:Int) {
-
+        
         tappedBox = words[number]
-
+        
         showingScore = true
-
+        
         gameCount += 1
-
+        
         if number == correctAnswer {
-
-            score += 10
-
-            scoreTitle  = isLastRound ? "Game Over" : "Correct!"
-
-            scoreMessage = isLastRound ?  "Your final Score: \(score)" : "Score: \(score)"
-
-       } else {
-
-            scoreTitle = isLastRound ? "Game Over" : "wrong answer"
-
-            scoreMessage =  "The answer you choose mean \(words[number]) in Korean."
-
+            resultMessage = isLastRound ? "Game Over\nYour final Score: \(score)" : "Correct!"
+        } else {
+            resultMessage = isLastRound ? "Game Over\nThe answer you choose means \(words[number]) in Korean." : "Wrong answer"
         }
-
+        withAnimation {
+            isShowingResult = true
+        }
+        
         alertAction = isLastRound ? "Restart" : "Confirm"
-
     }
+    
+    
     
     
     
